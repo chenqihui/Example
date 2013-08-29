@@ -8,9 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+#import "BMKMapManager.h"
+
 @class ViewController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
+{
+    BMKMapManager* _mapManager;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 

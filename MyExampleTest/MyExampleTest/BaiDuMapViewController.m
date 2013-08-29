@@ -8,12 +8,10 @@
 
 #import "BaiDuMapViewController.h"
 
-#import "BMKMapManager.h"
 #import "BMKMapView.h"
 
 @interface BaiDuMapViewController ()<BMKMapViewDelegate>
 {
-    BMKMapManager* _mapManager;
     BMKMapView* _mapView;
 }
 
@@ -23,7 +21,6 @@
 
 - (void)dealloc
 {
-    [_mapManager release];
     [_mapView release];
     [super dealloc];
 }
@@ -32,13 +29,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    _mapManager = [[BMKMapManager alloc]init];
-    // 如果要关注网络及授权验证事件，请设定     generalDelegate参数
-    BOOL ret = [_mapManager start:@"F8234da2cf59207ec0c76cfe972d8cca"  generalDelegate:nil];
-    if (!ret) {
-        NSLog(@"manager start failed!");
-        return;
-    }
     _mapView = [[BMKMapView alloc]initWithFrame:self.view.bounds];
     self.view = _mapView;
     [_mapView setShowsUserLocation:YES];
@@ -47,6 +37,8 @@
 - (void)mapView:(BMKMapView *)mapView didUpdateUserLocation:(BMKUserLocation *)userLocation;
 {
     [mapView setCenterCoordinate:userLocation.coordinate animated:YES];
+    [mapView addAnnotation:userLocation];
+    [_mapView setShowsUserLocation:NO];
 }
 
 -(void)viewWillAppear:(BOOL)animated
