@@ -10,14 +10,9 @@
 
 #import "Pan2ViewController.h"
 
-#import "CustomStatusBar.h"
-
 @interface PanGestureRecoginzerViewController ()
 {
     Pan2ViewController *vcl;
-    
-    BOOL m_bShow;
-    CustomStatusBar *m_status;
 }
 
 @end
@@ -26,7 +21,6 @@
 
 - (void)dealloc
 {
-    [m_status release];
     [vcl release];
     [super dealloc];
 }
@@ -55,20 +49,9 @@
 //    [vcl.view setFrame:self.view.bounds];
 //    [self.view addSubview:vcl.view];
     
-//    UIMenuController *theMenu = [UIMenuController sharedMenuController];
-//    [theMenu setTargetRect:CGRectMake(0, 60, 30, 20) inView:self.view];
-//    [theMenu setMenuVisible:YES animated:YES];
-    
-    if(m_status == nil)
-        m_status = [[CustomStatusBar alloc] init];
-    m_bShow = !m_bShow;
-    if (m_bShow)
-    {
-        [m_status showStatusMessage:@"发送中……"];
-    }else
-    {
-        [m_status hide];
-    }
+    UIMenuController *theMenu = [UIMenuController sharedMenuController];
+    [theMenu setTargetRect:CGRectMake(0, 60, 30, 20) inView:self.view];
+    [theMenu setMenuVisible:YES animated:YES];
 }
 
 - (void)longPress:(UILongPressGestureRecognizer *)recognizer

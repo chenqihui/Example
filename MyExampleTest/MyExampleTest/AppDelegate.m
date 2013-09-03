@@ -31,7 +31,6 @@
     if (!ret) {
         NSLog(@"manager start failed!");
     }
-    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleBlackOpaque;
     self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];
     UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:self.viewController];
     

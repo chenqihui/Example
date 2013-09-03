@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B116E07317D5BC9C00D4EFDD /* MoveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B116E07217D5BC9C00D4EFDD /* MoveViewController.m */; };
 		B12A621C17CDE4F3009B2F03 /* libbaidumapapi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B12A61FB17CDE4F3009B2F03 /* libbaidumapapi.a */; };
 		B12A621D17CDE4F3009B2F03 /* libbaidumapapi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B12A621B17CDE4F3009B2F03 /* libbaidumapapi.a */; };
 		B12A623D17CDE841009B2F03 /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B12A623C17CDE841009B2F03 /* mapapi.bundle */; };
@@ -38,12 +37,9 @@
 		B18090F617A9EDD9009A61BA /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B18090F417A9EDD9009A61BA /* ViewController.xib */; };
 		B180910217AA05A2009A61BA /* TestOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B180910117AA05A2009A61BA /* TestOneViewController.m */; };
 		B180910F17AA2C45009A61BA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B180910E17AA2C45009A61BA /* QuartzCore.framework */; };
-		B199D16517D46F3800DDCC8E /* CustomStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B199D16417D46F3800DDCC8E /* CustomStatusBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B116E07117D5BC9C00D4EFDD /* MoveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveViewController.h; sourceTree = "<group>"; };
-		B116E07217D5BC9C00D4EFDD /* MoveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoveViewController.m; sourceTree = "<group>"; };
 		B12A61DE17CDE4F3009B2F03 /* BMapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMapKit.h; sourceTree = "<group>"; };
 		B12A61DF17CDE4F3009B2F03 /* BMKAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKAnnotation.h; sourceTree = "<group>"; };
 		B12A61E017CDE4F3009B2F03 /* BMKAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKAnnotationView.h; sourceTree = "<group>"; };
@@ -174,8 +170,6 @@
 		B180910017AA05A2009A61BA /* TestOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestOneViewController.h; sourceTree = "<group>"; };
 		B180910117AA05A2009A61BA /* TestOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestOneViewController.m; sourceTree = "<group>"; };
 		B180910E17AA2C45009A61BA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		B199D16317D46F3800DDCC8E /* CustomStatusBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomStatusBar.h; sourceTree = "<group>"; };
-		B199D16417D46F3800DDCC8E /* CustomStatusBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomStatusBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -387,8 +381,6 @@
 				B180910117AA05A2009A61BA /* TestOneViewController.m */,
 				B139271617B0910B008FC719 /* PanGestureRecoginzerViewController.h */,
 				B139271717B0910B008FC719 /* PanGestureRecoginzerViewController.m */,
-				B199D16317D46F3800DDCC8E /* CustomStatusBar.h */,
-				B199D16417D46F3800DDCC8E /* CustomStatusBar.m */,
 				B1392C3F17B0A42E008FC719 /* Pan2ViewController.h */,
 				B1392C4017B0A42E008FC719 /* Pan2ViewController.m */,
 				B1392C4217B0A871008FC719 /* GestureRecognizerVcl.h */,
@@ -401,8 +393,6 @@
 				B1612F5417BC7167004DF7CB /* InputPanel.m */,
 				B12A624417CDE8CE009B2F03 /* BaiDuMapViewController.h */,
 				B12A624517CDE8CE009B2F03 /* BaiDuMapViewController.m */,
-				B116E07117D5BC9C00D4EFDD /* MoveViewController.h */,
-				B116E07217D5BC9C00D4EFDD /* MoveViewController.m */,
 				B18090E017A9EDD8009A61BA /* Supporting Files */,
 			);
 			path = MyExampleTest;
@@ -508,8 +498,6 @@
 				B1612F5217BC7157004DF7CB /* FillAffairViewController.m in Sources */,
 				B1612F5517BC7167004DF7CB /* InputPanel.m in Sources */,
 				B12A624617CDE8CE009B2F03 /* BaiDuMapViewController.m in Sources */,
-				B199D16517D46F3800DDCC8E /* CustomStatusBar.m in Sources */,
-				B116E07317D5BC9C00D4EFDD /* MoveViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

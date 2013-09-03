@@ -13,7 +13,6 @@
 #import "CHMyTableViewController.h"
 #import "FillAffairViewController.h"
 #import "BaiDuMapViewController.h"
-#import "MoveViewController.h"
 
 @interface ViewController ()
 
@@ -98,9 +97,6 @@
             break;
         case 4:
             mvc = [[[BaiDuMapViewController alloc] init] autorelease];
-            break;
-        case 5:
-            mvc = [[[MoveViewController alloc] init] autorelease];
             break;
         default:
             break;
