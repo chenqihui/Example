@@ -42,6 +42,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7454011117D63245001BD2DD /* LookViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LookViewController.h; sourceTree = "<group>"; };
+		7454011217D63245001BD2DD /* LookViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LookViewController.m; sourceTree = "<group>"; };
 		B116E07117D5BC9C00D4EFDD /* MoveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveViewController.h; sourceTree = "<group>"; };
 		B116E07217D5BC9C00D4EFDD /* MoveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoveViewController.m; sourceTree = "<group>"; };
 		B12A61DE17CDE4F3009B2F03 /* BMapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMapKit.h; sourceTree = "<group>"; };
@@ -403,6 +405,8 @@
 				B12A624517CDE8CE009B2F03 /* BaiDuMapViewController.m */,
 				B116E07117D5BC9C00D4EFDD /* MoveViewController.h */,
 				B116E07217D5BC9C00D4EFDD /* MoveViewController.m */,
+				7454011117D63245001BD2DD /* LookViewController.h */,
+				7454011217D63245001BD2DD /* LookViewController.m */,
 				B18090E017A9EDD8009A61BA /* Supporting Files */,
 			);
 			path = MyExampleTest;
