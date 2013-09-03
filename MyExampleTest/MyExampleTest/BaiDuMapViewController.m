@@ -21,6 +21,7 @@
 
 - (void)dealloc
 {
+    //测试
     [_mapView release];
     [super dealloc];
 }
