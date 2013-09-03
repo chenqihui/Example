@@ -30,15 +30,22 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     _mapView = [[BMKMapView alloc]initWithFrame:self.view.bounds];
+    _mapView.delegate = self;
     self.view = _mapView;
-    [_mapView setShowsUserLocation:YES];
+//    [_mapView setShowsUserLocation:YES];
+    _mapView.showsUserLocation = NO;//先关闭显示的定位图层
+    _mapView.userTrackingMode = BMKUserTrackingModeNone;//设置定位的状态
+    _mapView.showsUserLocation = YES;//显示定位图层
 }
 
 - (void)mapView:(BMKMapView *)mapView didUpdateUserLocation:(BMKUserLocation *)userLocation;
 {
-    [mapView setCenterCoordinate:userLocation.coordinate animated:YES];
-    [mapView addAnnotation:userLocation];
-    [_mapView setShowsUserLocation:NO];
+//    [_mapView setShowsUserLocation:NO];
+}
+
+- (void)mapViewDidStopLocatingUser:(BMKMapView *)mapView
+{
+    [mapView setCenterCoordinate:mapView.userLocation.coordinate animated:YES];
 }
 
 -(void)viewWillAppear:(BOOL)animated
