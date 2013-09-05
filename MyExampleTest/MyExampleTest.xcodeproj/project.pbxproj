@@ -38,6 +38,7 @@
 		B18090F617A9EDD9009A61BA /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B18090F417A9EDD9009A61BA /* ViewController.xib */; };
 		B180910217AA05A2009A61BA /* TestOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B180910117AA05A2009A61BA /* TestOneViewController.m */; };
 		B180910F17AA2C45009A61BA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B180910E17AA2C45009A61BA /* QuartzCore.framework */; };
+		B18105F117D6C361004DB4F3 /* LookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7454011217D63245001BD2DD /* LookViewController.m */; };
 		B199D16517D46F3800DDCC8E /* CustomStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B199D16417D46F3800DDCC8E /* CustomStatusBar.m */; };
 /* End PBXBuildFile section */
 
@@ -514,6 +515,7 @@
 				B12A624617CDE8CE009B2F03 /* BaiDuMapViewController.m in Sources */,
 				B199D16517D46F3800DDCC8E /* CustomStatusBar.m in Sources */,
 				B116E07317D5BC9C00D4EFDD /* MoveViewController.m in Sources */,
+				B18105F117D6C361004DB4F3 /* LookViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

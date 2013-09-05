@@ -14,6 +14,7 @@
 #import "FillAffairViewController.h"
 #import "BaiDuMapViewController.h"
 #import "MoveViewController.h"
+#import "LookViewController.h"
 
 @interface ViewController ()
 
@@ -101,6 +102,9 @@
             break;
         case 5:
             mvc = [[[MoveViewController alloc] init] autorelease];
+            break;
+        case 6:
+            mvc = [[[LookViewController alloc] init] autorelease];
             break;
         default:
             break;
