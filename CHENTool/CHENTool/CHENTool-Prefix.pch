@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'CHENTool' target in the 'CHENTool' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
