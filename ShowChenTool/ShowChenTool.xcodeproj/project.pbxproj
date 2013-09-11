@@ -20,6 +20,7 @@
 		B11F72C917DDC5A900295F6F /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = B11F72C717DDC5A900295F6F /* ViewController_iPhone.xib */; };
 		B11F72CC17DDC5A900295F6F /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B11F72CA17DDC5A900295F6F /* ViewController_iPad.xib */; };
 		B11F72D817DDC5D300295F6F /* libCHENTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B11F72D717DDC5C900295F6F /* libCHENTool.a */; };
+		B129AD9A17E0650D009EEC21 /* showToolListData.plist in Resources */ = {isa = PBXBuildFile; fileRef = B129AD9917E0650D009EEC21 /* showToolListData.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		B11F72C817DDC5A900295F6F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		B11F72CB17DDC5A900295F6F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
 		B11F72D217DDC5C900295F6F /* CHENTool.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CHENTool.xcodeproj; path = ../CHENTool/CHENTool.xcodeproj; sourceTree = "<group>"; };
+		B129AD9917E0650D009EEC21 /* showToolListData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = showToolListData.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				B11F72BE17DDC5A900295F6F /* Default.png */,
 				B11F72C017DDC5A900295F6F /* Default@2x.png */,
 				B11F72C217DDC5A900295F6F /* Default-568h@2x.png */,
+				B129AD9917E0650D009EEC21 /* showToolListData.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				B11F72C317DDC5A900295F6F /* Default-568h@2x.png in Resources */,
 				B11F72C917DDC5A900295F6F /* ViewController_iPhone.xib in Resources */,
 				B11F72CC17DDC5A900295F6F /* ViewController_iPad.xib in Resources */,
+				B129AD9A17E0650D009EEC21 /* showToolListData.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +372,7 @@
 				B11F72D117DDC5A900295F6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
