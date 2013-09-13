@@ -24,13 +24,35 @@
     [tempData release];
 }
 
+- (void)read:(NSString *)filename typeClassDate:(NSString *)class complete:(void(^)(id data))complete
+{
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:filename ofType:@"plist"];
+    // 反射调用
+    Class cls = NSClassFromString(class);
+    id tempData = [[cls alloc] initWithContentsOfFile:plistPath];
+    complete(tempData);
+    [tempData release];
+}
+
+- (void)read2:(NSString *)filename typeClassDate:(NSString *)class complete:(NSString*(^)(id data))complete
+{
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:filename ofType:@"plist"];
+    // 反射调用
+    Class cls = NSClassFromString(class);
+    id tempData = [[cls alloc] initWithContentsOfFile:plistPath];
+    NSString *szResult = complete(tempData);
+    NSLog(@"%@", szResult);
+    [tempData release];
+}
+
 - (void)set
 {
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"showToolListData" ofType:@"plist"];
     NSMutableArray *data = [[NSMutableArray alloc] initWithContentsOfFile:plistPath];
-    NSLog(@"ha:%@", data);
     
     [data addObject:@"haha"];
+    
+    [data writeToFile:plistPath atomically:YES];
     
 //    //添加一项内容
 //    [data setObject:@"add some content" forKey:@"c_key"];

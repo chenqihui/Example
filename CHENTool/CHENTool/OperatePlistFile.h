@@ -12,6 +12,10 @@
 
 - (void)read:(NSString *)filename typeDate:(id *)data;
 
+- (void)read:(NSString *)filename typeClassDate:(NSString *)class complete:(void(^)(id data))complete;
+
+- (void)read2:(NSString *)filename typeClassDate:(NSString *)class complete:(NSString*(^)(id data))complete;
+
 - (void)set;
 
 @end

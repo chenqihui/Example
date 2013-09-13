@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import "Page1ViewController.h"
+
 @interface ViewController ()
 
 @end
@@ -28,9 +30,14 @@
     
     self.m_dataMutableArray = [NSMutableArray new];
     OperatePlistFile *operatePlistFile = [[OperatePlistFile new] autorelease];
-    [operatePlistFile read:@"showToolListData" typeDate:&_m_dataMutableArray];
-    
-    [operatePlistFile set];
+//    [operatePlistFile read:@"showToolListData" typeDate:&_m_dataMutableArray];
+//    [operatePlistFile read:@"showToolListData" typeClassDate:@"NSMutableArray" complete:^(id data) {
+//        _m_dataMutableArray = [data retain];
+//    }];
+    [operatePlistFile read2:@"showToolListData" typeClassDate:@"NSMutableArray" complete:^NSString*(id data) {
+        _m_dataMutableArray = [data retain];
+        return @"over";
+    }];
 }
 
 #pragma mark - UITableViewDataSource
@@ -66,12 +73,10 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    UIViewController *mvc = nil;
-//    switch (indexPath.row)
-//    {
-//        case 0:
-//            mvc = [[[TestOneViewController alloc] init] autorelease];
-//    }
+    NSString *page = [NSString stringWithFormat:@"Page%dViewController", indexPath.row + 1];
+    Class cls = NSClassFromString(page);
+    UIViewController *mvc = [[[cls alloc] init] autorelease];
+    
     if(mvc != nil)
         [self.navigationController pushViewController:mvc animated:YES];
 }

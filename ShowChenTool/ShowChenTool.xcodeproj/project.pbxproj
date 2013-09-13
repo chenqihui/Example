@@ -21,6 +21,7 @@
 		B11F72CC17DDC5A900295F6F /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B11F72CA17DDC5A900295F6F /* ViewController_iPad.xib */; };
 		B11F72D817DDC5D300295F6F /* libCHENTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B11F72D717DDC5C900295F6F /* libCHENTool.a */; };
 		B129AD9A17E0650D009EEC21 /* showToolListData.plist in Resources */ = {isa = PBXBuildFile; fileRef = B129AD9917E0650D009EEC21 /* showToolListData.plist */; };
+		B1960A8F17E19598001D4F7F /* Page1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1960A8E17E19598001D4F7F /* Page1ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		B11F72CB17DDC5A900295F6F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
 		B11F72D217DDC5C900295F6F /* CHENTool.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CHENTool.xcodeproj; path = ../CHENTool/CHENTool.xcodeproj; sourceTree = "<group>"; };
 		B129AD9917E0650D009EEC21 /* showToolListData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = showToolListData.plist; sourceTree = "<group>"; };
+		B1960A8D17E19598001D4F7F /* Page1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page1ViewController.h; sourceTree = "<group>"; };
+		B1960A8E17E19598001D4F7F /* Page1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page1ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,8 @@
 				B11F72C517DDC5A900295F6F /* ViewController.m */,
 				B11F72C717DDC5A900295F6F /* ViewController_iPhone.xib */,
 				B11F72CA17DDC5A900295F6F /* ViewController_iPad.xib */,
+				B1960A8D17E19598001D4F7F /* Page1ViewController.h */,
+				B1960A8E17E19598001D4F7F /* Page1ViewController.m */,
 				B11F72B317DDC5A900295F6F /* Supporting Files */,
 			);
 			path = ShowChenTool;
@@ -230,6 +235,7 @@
 				B11F72B917DDC5A900295F6F /* main.m in Sources */,
 				B11F72BD17DDC5A900295F6F /* AppDelegate.m in Sources */,
 				B11F72C617DDC5A900295F6F /* ViewController.m in Sources */,
+				B1960A8F17E19598001D4F7F /* Page1ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
