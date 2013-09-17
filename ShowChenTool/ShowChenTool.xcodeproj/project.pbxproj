@@ -21,6 +21,8 @@
 		B11F72CC17DDC5A900295F6F /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B11F72CA17DDC5A900295F6F /* ViewController_iPad.xib */; };
 		B11F72D817DDC5D300295F6F /* libCHENTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B11F72D717DDC5C900295F6F /* libCHENTool.a */; };
 		B129AD9A17E0650D009EEC21 /* showToolListData.plist in Resources */ = {isa = PBXBuildFile; fileRef = B129AD9917E0650D009EEC21 /* showToolListData.plist */; };
+		B158262A17E8423E0064A539 /* libThirdTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B158262917E842310064A539 /* libThirdTool.a */; };
+		B158262F17E842DC0064A539 /* Page2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B158262E17E842DC0064A539 /* Page2ViewController.m */; };
 		B1960A8F17E19598001D4F7F /* Page1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1960A8E17E19598001D4F7F /* Page1ViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +40,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = B11F728E17DDC4E900295F6F;
 			remoteInfo = CHENTool;
+		};
+		B158262817E842310064A539 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B158262417E842300064A539 /* ThirdTool.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B15825E417E83EC00064A539;
+			remoteInfo = ThirdTool;
+		};
+		B158262B17E842430064A539 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B158262417E842300064A539 /* ThirdTool.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B15825E317E83EC00064A539;
+			remoteInfo = ThirdTool;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -61,6 +77,9 @@
 		B11F72CB17DDC5A900295F6F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
 		B11F72D217DDC5C900295F6F /* CHENTool.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CHENTool.xcodeproj; path = ../CHENTool/CHENTool.xcodeproj; sourceTree = "<group>"; };
 		B129AD9917E0650D009EEC21 /* showToolListData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = showToolListData.plist; sourceTree = "<group>"; };
+		B158262417E842300064A539 /* ThirdTool.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ThirdTool.xcodeproj; path = ../ThirdTool/ThirdTool.xcodeproj; sourceTree = "<group>"; };
+		B158262D17E842DC0064A539 /* Page2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page2ViewController.h; sourceTree = "<group>"; };
+		B158262E17E842DC0064A539 /* Page2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page2ViewController.m; sourceTree = "<group>"; };
 		B1960A8D17E19598001D4F7F /* Page1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page1ViewController.h; sourceTree = "<group>"; };
 		B1960A8E17E19598001D4F7F /* Page1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page1ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B158262A17E8423E0064A539 /* libThirdTool.a in Frameworks */,
 				B11F72D817DDC5D300295F6F /* libCHENTool.a in Frameworks */,
 				B11F72AD17DDC5A900295F6F /* UIKit.framework in Frameworks */,
 				B11F72AF17DDC5A900295F6F /* Foundation.framework in Frameworks */,
@@ -83,6 +103,7 @@
 		B11F72A017DDC5A900295F6F = {
 			isa = PBXGroup;
 			children = (
+				B158262417E842300064A539 /* ThirdTool.xcodeproj */,
 				B11F72D217DDC5C900295F6F /* CHENTool.xcodeproj */,
 				B11F72B217DDC5A900295F6F /* ShowChenTool */,
 				B11F72AB17DDC5A900295F6F /* Frameworks */,
@@ -119,6 +140,8 @@
 				B11F72CA17DDC5A900295F6F /* ViewController_iPad.xib */,
 				B1960A8D17E19598001D4F7F /* Page1ViewController.h */,
 				B1960A8E17E19598001D4F7F /* Page1ViewController.m */,
+				B158262D17E842DC0064A539 /* Page2ViewController.h */,
+				B158262E17E842DC0064A539 /* Page2ViewController.m */,
 				B11F72B317DDC5A900295F6F /* Supporting Files */,
 			);
 			path = ShowChenTool;
@@ -147,6 +170,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		B158262517E842300064A539 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B158262917E842310064A539 /* libThirdTool.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -161,6 +192,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				B158262C17E842430064A539 /* PBXTargetDependency */,
 				B11F72DA17DDC6CA00295F6F /* PBXTargetDependency */,
 			);
 			name = ShowChenTool;
@@ -192,6 +224,10 @@
 					ProductGroup = B11F72D317DDC5C900295F6F /* Products */;
 					ProjectRef = B11F72D217DDC5C900295F6F /* CHENTool.xcodeproj */;
 				},
+				{
+					ProductGroup = B158262517E842300064A539 /* Products */;
+					ProjectRef = B158262417E842300064A539 /* ThirdTool.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -206,6 +242,13 @@
 			fileType = archive.ar;
 			path = libCHENTool.a;
 			remoteRef = B11F72D617DDC5C900295F6F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B158262917E842310064A539 /* libThirdTool.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libThirdTool.a;
+			remoteRef = B158262817E842310064A539 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -236,6 +279,7 @@
 				B11F72BD17DDC5A900295F6F /* AppDelegate.m in Sources */,
 				B11F72C617DDC5A900295F6F /* ViewController.m in Sources */,
 				B1960A8F17E19598001D4F7F /* Page1ViewController.m in Sources */,
+				B158262F17E842DC0064A539 /* Page2ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +290,11 @@
 			isa = PBXTargetDependency;
 			name = CHENTool;
 			targetProxy = B11F72D917DDC6CA00295F6F /* PBXContainerItemProxy */;
+		};
+		B158262C17E842430064A539 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ThirdTool;
+			targetProxy = B158262B17E842430064A539 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -338,7 +387,10 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ShowChenTool/ShowChenTool-Prefix.pch";
-				HEADER_SEARCH_PATHS = $SOURCE_ROOT/../CHENTool/CHENTool/;
+				HEADER_SEARCH_PATHS = (
+					$SOURCE_ROOT/../CHENTool/CHENTool/,
+					$SOURCE_ROOT/../ThirdTool/ThirdTool/,
+				);
 				INFOPLIST_FILE = "ShowChenTool/ShowChenTool-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -351,7 +403,10 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ShowChenTool/ShowChenTool-Prefix.pch";
-				HEADER_SEARCH_PATHS = $SOURCE_ROOT/../CHENTool/CHENTool/;
+				HEADER_SEARCH_PATHS = (
+					$SOURCE_ROOT/../CHENTool/CHENTool/,
+					$SOURCE_ROOT/../ThirdTool/ThirdTool/,
+				);
 				INFOPLIST_FILE = "ShowChenTool/ShowChenTool-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
