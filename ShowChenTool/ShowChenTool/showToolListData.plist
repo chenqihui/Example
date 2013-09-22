@@ -4,5 +4,6 @@
 <array>
 	<string>1、文件读取</string>
 	<string>2、测试AFNet</string>
+	<string>3、对象属性反射</string>
 </array>
 </plist>

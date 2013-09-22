@@ -12,6 +12,7 @@
 		B11F729A17DDC4E900295F6F /* CHENTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B11F729917DDC4E900295F6F /* CHENTool.m */; };
 		B11F72DC17DDC8B000295F6F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B11F72DB17DDC8B000295F6F /* UIKit.framework */; };
 		B129AD9D17E0684D009EEC21 /* OperatePlistFile.m in Sources */ = {isa = PBXBuildFile; fileRef = B129AD9C17E0684D009EEC21 /* OperatePlistFile.m */; };
+		B133EAAC17EEE31A00FD7106 /* ReflectPropertyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = B133EAAB17EEE31A00FD7106 /* ReflectPropertyValue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,6 +37,8 @@
 		B11F72DB17DDC8B000295F6F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B129AD9B17E0684D009EEC21 /* OperatePlistFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperatePlistFile.h; sourceTree = "<group>"; };
 		B129AD9C17E0684D009EEC21 /* OperatePlistFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperatePlistFile.m; sourceTree = "<group>"; };
+		B133EAAA17EEE31A00FD7106 /* ReflectPropertyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReflectPropertyValue.h; sourceTree = "<group>"; };
+		B133EAAB17EEE31A00FD7106 /* ReflectPropertyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReflectPropertyValue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,8 @@
 				B11F729917DDC4E900295F6F /* CHENTool.m */,
 				B129AD9B17E0684D009EEC21 /* OperatePlistFile.h */,
 				B129AD9C17E0684D009EEC21 /* OperatePlistFile.m */,
+				B133EAAA17EEE31A00FD7106 /* ReflectPropertyValue.h */,
+				B133EAAB17EEE31A00FD7106 /* ReflectPropertyValue.m */,
 				B11F729517DDC4E900295F6F /* Supporting Files */,
 			);
 			path = CHENTool;
@@ -149,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B11F729A17DDC4E900295F6F /* CHENTool.m in Sources */,
+				B133EAAC17EEE31A00FD7106 /* ReflectPropertyValue.m in Sources */,
 				B129AD9D17E0684D009EEC21 /* OperatePlistFile.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
