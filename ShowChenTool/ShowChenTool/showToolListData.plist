@@ -4,12 +4,8 @@
 <array>
 	<string>1、文件读取</string>
 	<string>2、测试AFNet</string>
-<<<<<<< HEAD
-	<string>3、</string>
+	<string>3、对象属性反射</string>
 	<string>4、dictionary使用</string>
 	<string>5、test示例</string>
-=======
-	<string>3、对象属性反射</string>
->>>>>>> 0f0e49f5bc528a5b615de1217e29669a5d7405d5
 </array>
 </plist>

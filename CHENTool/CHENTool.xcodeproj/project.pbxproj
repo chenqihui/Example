@@ -7,18 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		743EC87D17FB0C7300637FCF /* QHKeyValuePair.m in Sources */ = {isa = PBXBuildFile; fileRef = 743EC87C17FB0C7300637FCF /* QHKeyValuePair.m */; };
-		743EC88017FB100800637FCF /* QHQueueDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 743EC87F17FB100800637FCF /* QHQueueDictionary.m */; };
+		741007C51802F67D0002789A /* QHKeyValuePair.m in Sources */ = {isa = PBXBuildFile; fileRef = 741007BE1802F67D0002789A /* QHKeyValuePair.m */; };
+		741007C61802F67D0002789A /* QHOperatePlistFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 741007C01802F67D0002789A /* QHOperatePlistFile.m */; };
+		741007C71802F67D0002789A /* QHQueueDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 741007C21802F67D0002789A /* QHQueueDictionary.m */; };
+		741007C81802F67D0002789A /* ReflectPropertyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 741007C41802F67D0002789A /* ReflectPropertyValue.m */; };
 		B11F729317DDC4E900295F6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B11F729217DDC4E900295F6F /* Foundation.framework */; };
 		B11F729817DDC4E900295F6F /* CHENTool.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B11F729717DDC4E900295F6F /* CHENTool.h */; };
 		B11F729A17DDC4E900295F6F /* CHENTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B11F729917DDC4E900295F6F /* CHENTool.m */; };
 		B11F72DC17DDC8B000295F6F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B11F72DB17DDC8B000295F6F /* UIKit.framework */; };
-<<<<<<< HEAD
-		B129AD9D17E0684D009EEC21 /* QHOperatePlistFile.m in Sources */ = {isa = PBXBuildFile; fileRef = B129AD9C17E0684D009EEC21 /* QHOperatePlistFile.m */; };
-=======
-		B129AD9D17E0684D009EEC21 /* OperatePlistFile.m in Sources */ = {isa = PBXBuildFile; fileRef = B129AD9C17E0684D009EEC21 /* OperatePlistFile.m */; };
-		B133EAAC17EEE31A00FD7106 /* ReflectPropertyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = B133EAAB17EEE31A00FD7106 /* ReflectPropertyValue.m */; };
->>>>>>> 0f0e49f5bc528a5b615de1217e29669a5d7405d5
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,25 +31,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		743EC87B17FB0C7300637FCF /* QHKeyValuePair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHKeyValuePair.h; sourceTree = "<group>"; };
-		743EC87C17FB0C7300637FCF /* QHKeyValuePair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHKeyValuePair.m; sourceTree = "<group>"; };
-		743EC87E17FB100800637FCF /* QHQueueDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHQueueDictionary.h; sourceTree = "<group>"; };
-		743EC87F17FB100800637FCF /* QHQueueDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHQueueDictionary.m; sourceTree = "<group>"; };
+		741007BD1802F67D0002789A /* QHKeyValuePair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHKeyValuePair.h; sourceTree = "<group>"; };
+		741007BE1802F67D0002789A /* QHKeyValuePair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHKeyValuePair.m; sourceTree = "<group>"; };
+		741007BF1802F67D0002789A /* QHOperatePlistFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHOperatePlistFile.h; sourceTree = "<group>"; };
+		741007C01802F67D0002789A /* QHOperatePlistFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHOperatePlistFile.m; sourceTree = "<group>"; };
+		741007C11802F67D0002789A /* QHQueueDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHQueueDictionary.h; sourceTree = "<group>"; };
+		741007C21802F67D0002789A /* QHQueueDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHQueueDictionary.m; sourceTree = "<group>"; };
+		741007C31802F67D0002789A /* ReflectPropertyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReflectPropertyValue.h; sourceTree = "<group>"; };
+		741007C41802F67D0002789A /* ReflectPropertyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReflectPropertyValue.m; sourceTree = "<group>"; };
 		B11F728F17DDC4E900295F6F /* libCHENTool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCHENTool.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B11F729217DDC4E900295F6F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B11F729617DDC4E900295F6F /* CHENTool-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CHENTool-Prefix.pch"; sourceTree = "<group>"; };
 		B11F729717DDC4E900295F6F /* CHENTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHENTool.h; sourceTree = "<group>"; };
 		B11F729917DDC4E900295F6F /* CHENTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHENTool.m; sourceTree = "<group>"; };
 		B11F72DB17DDC8B000295F6F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-<<<<<<< HEAD
-		B129AD9B17E0684D009EEC21 /* QHOperatePlistFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHOperatePlistFile.h; sourceTree = "<group>"; };
-		B129AD9C17E0684D009EEC21 /* QHOperatePlistFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHOperatePlistFile.m; sourceTree = "<group>"; };
-=======
-		B129AD9B17E0684D009EEC21 /* OperatePlistFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperatePlistFile.h; sourceTree = "<group>"; };
-		B129AD9C17E0684D009EEC21 /* OperatePlistFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperatePlistFile.m; sourceTree = "<group>"; };
-		B133EAAA17EEE31A00FD7106 /* ReflectPropertyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReflectPropertyValue.h; sourceTree = "<group>"; };
-		B133EAAB17EEE31A00FD7106 /* ReflectPropertyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReflectPropertyValue.m; sourceTree = "<group>"; };
->>>>>>> 0f0e49f5bc528a5b615de1217e29669a5d7405d5
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,26 +60,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		743EC87917FB0B5C00637FCF /* plistFile */ = {
-			isa = PBXGroup;
-			children = (
-				B129AD9B17E0684D009EEC21 /* QHOperatePlistFile.h */,
-				B129AD9C17E0684D009EEC21 /* QHOperatePlistFile.m */,
-			);
-			name = plistFile;
-			sourceTree = "<group>";
-		};
-		743EC87A17FB0C3C00637FCF /* QueueDictionary */ = {
-			isa = PBXGroup;
-			children = (
-				743EC87B17FB0C7300637FCF /* QHKeyValuePair.h */,
-				743EC87C17FB0C7300637FCF /* QHKeyValuePair.m */,
-				743EC87E17FB100800637FCF /* QHQueueDictionary.h */,
-				743EC87F17FB100800637FCF /* QHQueueDictionary.m */,
-			);
-			name = QueueDictionary;
-			sourceTree = "<group>";
-		};
 		B11F728617DDC4E900295F6F = {
 			isa = PBXGroup;
 			children = (
@@ -120,15 +91,14 @@
 			children = (
 				B11F729717DDC4E900295F6F /* CHENTool.h */,
 				B11F729917DDC4E900295F6F /* CHENTool.m */,
-<<<<<<< HEAD
-				743EC87917FB0B5C00637FCF /* plistFile */,
-				743EC87A17FB0C3C00637FCF /* QueueDictionary */,
-=======
-				B129AD9B17E0684D009EEC21 /* OperatePlistFile.h */,
-				B129AD9C17E0684D009EEC21 /* OperatePlistFile.m */,
-				B133EAAA17EEE31A00FD7106 /* ReflectPropertyValue.h */,
-				B133EAAB17EEE31A00FD7106 /* ReflectPropertyValue.m */,
->>>>>>> 0f0e49f5bc528a5b615de1217e29669a5d7405d5
+				741007BD1802F67D0002789A /* QHKeyValuePair.h */,
+				741007BE1802F67D0002789A /* QHKeyValuePair.m */,
+				741007BF1802F67D0002789A /* QHOperatePlistFile.h */,
+				741007C01802F67D0002789A /* QHOperatePlistFile.m */,
+				741007C11802F67D0002789A /* QHQueueDictionary.h */,
+				741007C21802F67D0002789A /* QHQueueDictionary.m */,
+				741007C31802F67D0002789A /* ReflectPropertyValue.h */,
+				741007C41802F67D0002789A /* ReflectPropertyValue.m */,
 				B11F729517DDC4E900295F6F /* Supporting Files */,
 			);
 			path = CHENTool;
@@ -193,15 +163,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				741007C81802F67D0002789A /* ReflectPropertyValue.m in Sources */,
+				741007C61802F67D0002789A /* QHOperatePlistFile.m in Sources */,
+				741007C51802F67D0002789A /* QHKeyValuePair.m in Sources */,
+				741007C71802F67D0002789A /* QHQueueDictionary.m in Sources */,
 				B11F729A17DDC4E900295F6F /* CHENTool.m in Sources */,
-<<<<<<< HEAD
-				B129AD9D17E0684D009EEC21 /* QHOperatePlistFile.m in Sources */,
-				743EC88017FB100800637FCF /* QHQueueDictionary.m in Sources */,
-				743EC87D17FB0C7300637FCF /* QHKeyValuePair.m in Sources */,
-=======
-				B133EAAC17EEE31A00FD7106 /* ReflectPropertyValue.m in Sources */,
-				B129AD9D17E0684D009EEC21 /* OperatePlistFile.m in Sources */,
->>>>>>> 0f0e49f5bc528a5b615de1217e29669a5d7405d5
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
