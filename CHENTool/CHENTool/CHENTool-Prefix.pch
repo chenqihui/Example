@@ -6,6 +6,8 @@
     #import <Foundation/Foundation.h>
 
 #import "CHENTool.h"
-#import "OperatePlistFile.h"
+#import "QHOperatePlistFile.h"
+#import "QHKeyValuePair.h"
+#import "QHQueueDictionary.h"
 
 #endif

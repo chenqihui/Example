@@ -6,9 +6,9 @@
 //  Copyright (c) 2013年 User. All rights reserved.
 //
 
-#import "OperatePlistFile.h"
+#import "QHOperatePlistFile.h"
 
-@implementation OperatePlistFile
+@implementation QHOperatePlistFile
 
 - (void)read:(NSString *)filename typeDate:(id *)data
 {
@@ -20,7 +20,7 @@
     else{
         tempData = [[NSMutableDictionary alloc] initWithContentsOfFile:plistPath];
     }
-    *data = [tempData copy];
+    *data = [tempData retain];
     [tempData release];
 }
 

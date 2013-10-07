@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74378A9317FEB7970050405F /* Test5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74378A9117FEB7970050405F /* Test5ViewController.m */; };
+		74378A9A17FED0840050405F /* Test6ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74378A9917FED0840050405F /* Test6ViewController.m */; };
+		74378A9C17FED12D0050405F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74378A9B17FED12D0050405F /* QuartzCore.framework */; };
+		743EC88617FB120D00637FCF /* Page4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 743EC88517FB120D00637FCF /* Page4ViewController.m */; };
+		74863DD617FD883100D2B101 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74863DD517FD883100D2B101 /* AVFoundation.framework */; };
+		74863DDA17FDBC4E00D2B101 /* Test3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74863DD817FDBC4E00D2B101 /* Test3ViewController.m */; };
+		74863DDB17FDBC4E00D2B101 /* Test3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74863DD917FDBC4E00D2B101 /* Test3ViewController.xib */; };
+		74863DDF17FDD2E800D2B101 /* Test4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74863DDD17FDD2E800D2B101 /* Test4ViewController.m */; };
+		74863DE017FDD2E800D2B101 /* Test4ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74863DDE17FDD2E800D2B101 /* Test4ViewController.xib */; };
+		74DEB56717FBEF0A00FD024A /* Page5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DEB56617FBEF0A00FD024A /* Page5ViewController.m */; };
+		74DEB56917FBEF7E00FD024A /* testSource.plist in Resources */ = {isa = PBXBuildFile; fileRef = 74DEB56817FBEF7E00FD024A /* testSource.plist */; };
+		74DEB56D17FBF03300FD024A /* Test1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DEB56C17FBF03300FD024A /* Test1ViewController.m */; };
+		74DEB57017FC162100FD024A /* LotteryEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DEB56F17FC162100FD024A /* LotteryEntry.m */; };
+		74EDEB9C17FC385700CFFD79 /* Test2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74EDEB9A17FC385700CFFD79 /* Test2ViewController.m */; };
+		74EDEB9D17FC385700CFFD79 /* Test2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74EDEB9B17FC385700CFFD79 /* Test2ViewController.xib */; };
 		B11F72AD17DDC5A900295F6F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B11F72AC17DDC5A900295F6F /* UIKit.framework */; };
 		B11F72AF17DDC5A900295F6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B11F72AE17DDC5A900295F6F /* Foundation.framework */; };
 		B11F72B117DDC5A900295F6F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B11F72B017DDC5A900295F6F /* CoreGraphics.framework */; };
@@ -58,6 +73,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		74378A9017FEB7970050405F /* Test5ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test5ViewController.h; sourceTree = "<group>"; };
+		74378A9117FEB7970050405F /* Test5ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test5ViewController.m; sourceTree = "<group>"; };
+		74378A9817FED0830050405F /* Test6ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test6ViewController.h; sourceTree = "<group>"; };
+		74378A9917FED0840050405F /* Test6ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test6ViewController.m; sourceTree = "<group>"; };
+		74378A9B17FED12D0050405F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		743EC88417FB120D00637FCF /* Page4ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page4ViewController.h; sourceTree = "<group>"; };
+		743EC88517FB120D00637FCF /* Page4ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page4ViewController.m; sourceTree = "<group>"; };
+		74863DD517FD883100D2B101 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		74863DD717FDBC4E00D2B101 /* Test3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test3ViewController.h; sourceTree = "<group>"; };
+		74863DD817FDBC4E00D2B101 /* Test3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test3ViewController.m; sourceTree = "<group>"; };
+		74863DD917FDBC4E00D2B101 /* Test3ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Test3ViewController.xib; sourceTree = "<group>"; };
+		74863DDC17FDD2E800D2B101 /* Test4ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test4ViewController.h; sourceTree = "<group>"; };
+		74863DDD17FDD2E800D2B101 /* Test4ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test4ViewController.m; sourceTree = "<group>"; };
+		74863DDE17FDD2E800D2B101 /* Test4ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Test4ViewController.xib; sourceTree = "<group>"; };
+		74DEB56517FBEF0A00FD024A /* Page5ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page5ViewController.h; sourceTree = "<group>"; };
+		74DEB56617FBEF0A00FD024A /* Page5ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page5ViewController.m; sourceTree = "<group>"; };
+		74DEB56817FBEF7E00FD024A /* testSource.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = testSource.plist; sourceTree = "<group>"; };
+		74DEB56B17FBF03300FD024A /* Test1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test1ViewController.h; sourceTree = "<group>"; };
+		74DEB56C17FBF03300FD024A /* Test1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test1ViewController.m; sourceTree = "<group>"; };
+		74DEB56E17FC162100FD024A /* LotteryEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LotteryEntry.h; sourceTree = "<group>"; };
+		74DEB56F17FC162100FD024A /* LotteryEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LotteryEntry.m; sourceTree = "<group>"; };
+		74EDEB9917FC385700CFFD79 /* Test2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test2ViewController.h; sourceTree = "<group>"; };
+		74EDEB9A17FC385700CFFD79 /* Test2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test2ViewController.m; sourceTree = "<group>"; };
+		74EDEB9B17FC385700CFFD79 /* Test2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Test2ViewController.xib; sourceTree = "<group>"; };
 		B11F72A917DDC5A900295F6F /* ShowChenTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShowChenTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B11F72AC17DDC5A900295F6F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B11F72AE17DDC5A900295F6F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -89,6 +128,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74378A9C17FED12D0050405F /* QuartzCore.framework in Frameworks */,
+				74863DD617FD883100D2B101 /* AVFoundation.framework in Frameworks */,
 				B158262A17E8423E0064A539 /* libThirdTool.a in Frameworks */,
 				B11F72D817DDC5D300295F6F /* libCHENTool.a in Frameworks */,
 				B11F72AD17DDC5A900295F6F /* UIKit.framework in Frameworks */,
@@ -100,6 +141,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		74DEB56A17FBF01600FD024A /* test */ = {
+			isa = PBXGroup;
+			children = (
+				74DEB56B17FBF03300FD024A /* Test1ViewController.h */,
+				74DEB56C17FBF03300FD024A /* Test1ViewController.m */,
+				74DEB56E17FC162100FD024A /* LotteryEntry.h */,
+				74DEB56F17FC162100FD024A /* LotteryEntry.m */,
+				74EDEB9917FC385700CFFD79 /* Test2ViewController.h */,
+				74EDEB9A17FC385700CFFD79 /* Test2ViewController.m */,
+				74EDEB9B17FC385700CFFD79 /* Test2ViewController.xib */,
+				74863DD717FDBC4E00D2B101 /* Test3ViewController.h */,
+				74863DD817FDBC4E00D2B101 /* Test3ViewController.m */,
+				74863DD917FDBC4E00D2B101 /* Test3ViewController.xib */,
+				74863DDC17FDD2E800D2B101 /* Test4ViewController.h */,
+				74863DDD17FDD2E800D2B101 /* Test4ViewController.m */,
+				74863DDE17FDD2E800D2B101 /* Test4ViewController.xib */,
+				74378A9017FEB7970050405F /* Test5ViewController.h */,
+				74378A9117FEB7970050405F /* Test5ViewController.m */,
+				74378A9817FED0830050405F /* Test6ViewController.h */,
+				74378A9917FED0840050405F /* Test6ViewController.m */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
 		B11F72A017DDC5A900295F6F = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +187,8 @@
 		B11F72AB17DDC5A900295F6F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				74378A9B17FED12D0050405F /* QuartzCore.framework */,
+				74863DD517FD883100D2B101 /* AVFoundation.framework */,
 				B11F72AC17DDC5A900295F6F /* UIKit.framework */,
 				B11F72AE17DDC5A900295F6F /* Foundation.framework */,
 				B11F72B017DDC5A900295F6F /* CoreGraphics.framework */,
@@ -142,6 +209,11 @@
 				B1960A8E17E19598001D4F7F /* Page1ViewController.m */,
 				B158262D17E842DC0064A539 /* Page2ViewController.h */,
 				B158262E17E842DC0064A539 /* Page2ViewController.m */,
+				743EC88417FB120D00637FCF /* Page4ViewController.h */,
+				743EC88517FB120D00637FCF /* Page4ViewController.m */,
+				74DEB56517FBEF0A00FD024A /* Page5ViewController.h */,
+				74DEB56617FBEF0A00FD024A /* Page5ViewController.m */,
+				74DEB56A17FBF01600FD024A /* test */,
 				B11F72B317DDC5A900295F6F /* Supporting Files */,
 			);
 			path = ShowChenTool;
@@ -158,6 +230,7 @@
 				B11F72C017DDC5A900295F6F /* Default@2x.png */,
 				B11F72C217DDC5A900295F6F /* Default-568h@2x.png */,
 				B129AD9917E0650D009EEC21 /* showToolListData.plist */,
+				74DEB56817FBEF7E00FD024A /* testSource.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -261,9 +334,13 @@
 				B11F72B717DDC5A900295F6F /* InfoPlist.strings in Resources */,
 				B11F72BF17DDC5A900295F6F /* Default.png in Resources */,
 				B11F72C117DDC5A900295F6F /* Default@2x.png in Resources */,
+				74DEB56917FBEF7E00FD024A /* testSource.plist in Resources */,
+				74EDEB9D17FC385700CFFD79 /* Test2ViewController.xib in Resources */,
 				B11F72C317DDC5A900295F6F /* Default-568h@2x.png in Resources */,
 				B11F72C917DDC5A900295F6F /* ViewController_iPhone.xib in Resources */,
 				B11F72CC17DDC5A900295F6F /* ViewController_iPad.xib in Resources */,
+				74863DE017FDD2E800D2B101 /* Test4ViewController.xib in Resources */,
+				74863DDB17FDBC4E00D2B101 /* Test3ViewController.xib in Resources */,
 				B129AD9A17E0650D009EEC21 /* showToolListData.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,10 +352,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74DEB56D17FBF03300FD024A /* Test1ViewController.m in Sources */,
+				743EC88617FB120D00637FCF /* Page4ViewController.m in Sources */,
 				B11F72B917DDC5A900295F6F /* main.m in Sources */,
+				74863DDA17FDBC4E00D2B101 /* Test3ViewController.m in Sources */,
+				74DEB56717FBEF0A00FD024A /* Page5ViewController.m in Sources */,
+				74378A9A17FED0840050405F /* Test6ViewController.m in Sources */,
 				B11F72BD17DDC5A900295F6F /* AppDelegate.m in Sources */,
+				74EDEB9C17FC385700CFFD79 /* Test2ViewController.m in Sources */,
+				74863DDF17FDD2E800D2B101 /* Test4ViewController.m in Sources */,
+				74DEB57017FC162100FD024A /* LotteryEntry.m in Sources */,
 				B11F72C617DDC5A900295F6F /* ViewController.m in Sources */,
 				B1960A8F17E19598001D4F7F /* Page1ViewController.m in Sources */,
+				74378A9317FEB7970050405F /* Test5ViewController.m in Sources */,
 				B158262F17E842DC0064A539 /* Page2ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,7 +436,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -374,7 +460,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

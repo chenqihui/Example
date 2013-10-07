@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface OperatePlistFile : NSObject
+@interface QHOperatePlistFile : NSObject
 
 - (void)read:(NSString *)filename typeDate:(id *)data;
 

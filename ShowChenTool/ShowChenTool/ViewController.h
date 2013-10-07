@@ -12,6 +12,6 @@
 
 @property (retain, nonatomic) IBOutlet UITableView *m_myShowTableView;
 
-@property (retain, nonatomic) NSMutableArray *m_dataMutableArray;
+@property (assign, nonatomic) NSMutableArray *m_dataMutableArray;
 
 @end

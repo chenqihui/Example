@@ -28,13 +28,15 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    self.m_dataMutableArray = [NSMutableArray new];
-    OperatePlistFile *operatePlistFile = [[OperatePlistFile new] autorelease];
+    self.m_dataMutableArray = [[NSMutableArray alloc] init];
+    QHOperatePlistFile *operatePlistFile = [[QHOperatePlistFile new] autorelease];
 //    [operatePlistFile read:@"showToolListData" typeDate:&_m_dataMutableArray];
 //    [operatePlistFile read:@"showToolListData" typeClassDate:@"NSMutableArray" complete:^(id data) {
 //        _m_dataMutableArray = [data retain];
 //    }];
-    [operatePlistFile read2:@"showToolListData" typeClassDate:@"NSMutableArray" complete:^NSString*(id data) {
+    [operatePlistFile read2:@"showToolListData" typeClassDate:@"NSMutableArray" complete:^NSString*(id data)
+    {
+        [_m_dataMutableArray release];
         _m_dataMutableArray = [data retain];
         return @"over";
     }];

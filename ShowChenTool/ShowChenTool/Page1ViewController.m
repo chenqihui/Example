@@ -23,7 +23,7 @@
 	// Do any additional setup after loading the view.
     m_dataMutableArray = [NSMutableArray new];
     
-    OperatePlistFile *operatePlistFile = [[OperatePlistFile new] autorelease];
+    QHOperatePlistFile *operatePlistFile = [[QHOperatePlistFile new] autorelease];
     //1
     [operatePlistFile read:@"showToolListData" typeDate:&m_dataMutableArray];
     //2
