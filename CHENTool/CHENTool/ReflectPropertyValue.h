@@ -12,4 +12,6 @@
 
 - (NSMutableDictionary *)reflectDataFromOtherObject:(id)dataSource;//传入个实体对象
 
+- (BOOL)reflectDataFromOtherObject2:(id)dataSource data:(id)dic;
+
 @end

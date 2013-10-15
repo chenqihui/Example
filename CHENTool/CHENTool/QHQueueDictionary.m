@@ -40,7 +40,7 @@
     return [m_arQueue count];
 }
 
-//add
+#pragma mark add
 - (void)addKeyValuePair:(id)aKeyValuePair
 {
     [m_arQueue addObject:aKeyValuePair];
@@ -77,7 +77,7 @@
     return NO;
 }
 
-//remove
+#pragma mark remove
 - (void)removeAllKeyValuePairs
 {
     [m_arQueue removeAllObjects];
@@ -124,7 +124,7 @@
     [m_arQueue removeObject:keyValuePair];
 }
 
-//update
+#pragma mark update
 //更新，找不到对应的key就更新为失败，返回false
 - (BOOL)updateValue:(id)value forKey:(id)key
 {
@@ -167,7 +167,7 @@
     return NO;
 }
 
-//get
+#pragma mark get
 - (QHKeyValuePair *)firstkeyValuePair NS_AVAILABLE(10_6, 4_0)
 {
     return [m_arQueue firstObject];
@@ -227,7 +227,7 @@
 }
 
 //2、转换NSDictionary和NSArray等ObjC的对象
-
+#pragma mark
 - (BOOL)addKeyValuePairsFromArrayKeyValuePair:(NSArray *)otherArray
 {
     for (int i = 0; i < [m_arQueue count]; i++)
@@ -252,19 +252,22 @@
 
 - (void)transformDictionaryToQHQueueDictionary:(NSMutableDictionary *)dic
 {
-//    NSLog(@"%@", dic);
-    [dic enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop)
+    /*
+     NSMutableDictionary的获取是不按顺序的
+     因此可以获取对应的NSArray，通过API进行简单的排序
+     */
+    NSArray *arKeys = [dic allKeys];
+    NSArray *sortedKeys = [arKeys sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
+    for (int i = 0; i < [dic count]; i++)
     {
-        [self addVlaue:obj key:key];
-    }];
-//    NSArray *arKeys = [dic allKeys];
-//    NSMutableArray *arKeys = [[NSMutableArray new] autorelease];
-//    for (int i = 0; i < [dic count]; i++)
-//    {
-//        id key = [arKeys objectAtIndex:i];
-//        NSLog(@"%@", key);
-//        [self addVlaue:[dic objectForKey:key] key:key];
-//    }
+        id key = [sortedKeys objectAtIndex:i];
+        [self addVlaue:[dic objectForKey:key] key:key];
+    }
+}
+
+- (NSComparisonResult)caseInsensitiveCompare:(NSString *)aString
+{
+    return NSOrderedDescending;
 }
 
 @end

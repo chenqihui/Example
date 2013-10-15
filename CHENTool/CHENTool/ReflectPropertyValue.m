@@ -35,7 +35,6 @@
     return keys;
 }
 
-
 - (NSMutableDictionary *)reflectDataFromOtherObject:(id)dataSource
 {
     NSMutableDictionary *dic = [NSMutableDictionary dictionary];
@@ -43,8 +42,7 @@
     for (NSString *key in [self propertyKeys:dataSource]) {
         if ([dataSource isKindOfClass:[NSDictionary class]]) {
             ret = ([dataSource valueForKey:key]==nil)?NO:YES;
-        }
-        else
+        }else
         {
             ret = [dataSource respondsToSelector:NSSelectorFromString(key)];
         }

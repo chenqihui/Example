@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MyEntityObject : NSObject
+@interface MyEntityObject : NSObject//<NSCoding>
 {
     NSString *m_szName;
     NSString *m_szAddress;

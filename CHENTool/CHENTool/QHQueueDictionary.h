@@ -25,7 +25,7 @@
 
 - (NSUInteger)count;
 
-//add
+#pragma mark add
 - (void)addKeyValuePair:(id)aKeyValuePair;
 
 //key可重复
@@ -35,7 +35,7 @@
 
 - (BOOL)insertKeyValuePairAtIndex:(NSUInteger)index withKeyValuePair:(id)aKeyValuePair;
 
-//remove
+#pragma mark remove
 - (void)removeAllKeyValuePairs;
 
 - (void)removeKeyValuePairsForKeys:(NSArray *)keyArray;
@@ -48,7 +48,7 @@
 
 - (void)removeKeyValuePair:(QHKeyValuePair *)keyValuePair;
 
-//update
+#pragma mark update
 //更新，找不到对应的key就更新为失败，返回false
 - (BOOL)updateValue:(id)value forKey:(id)key;
 
@@ -58,7 +58,7 @@
 
 - (BOOL)updateKey:(id)key atIndex:(NSUInteger)index;
 
-//get
+#pragma mark get
 - (QHKeyValuePair *)firstkeyValuePair NS_AVAILABLE(10_6, 4_0);
 
 - (QHKeyValuePair *)lastkeyValuePair;
@@ -76,7 +76,7 @@
 - (NSMutableArray *)allKeys;
 
 //2、转换NSDictionary和NSArray等ObjC的对象
-
+#pragma mark
 - (BOOL)addKeyValuePairsFromArrayKeyValuePair:(NSArray *)otherArray;
 
 - (void)transformDictionaryToQHQueueDictionary:(NSMutableDictionary *)dic;

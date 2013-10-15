@@ -2,17 +2,17 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>New item</key>
+	<key>A</key>
 	<string>使用NSDateFotmatter的setDateFormat:方法来定制日期对象的格式化字符串</string>
-	<key>New item - 2</key>
+	<key>B</key>
 	<string>Target/Action应用程序</string>
-	<key>New item - 3</key>
+	<key>C</key>
 	<string>创建一个to-do list应用程序，类似Excel表格</string>
-	<key>New item - 4</key>
+	<key>D</key>
 	<string>键值对</string>
-	<key>New item - 5</key>
+	<key>E</key>
 	<string>NSUndoManager</string>
-	<key>New item - 6</key>
+	<key>F</key>
 	<string>NSBezierPath</string>
 </dict>
 </plist>
