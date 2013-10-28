@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52B23BB9DB64060C5C55FE8C /* QHRecordUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B23BC41F01BACEC161AAA0 /* QHRecordUtil.m */; };
 		741007C51802F67D0002789A /* QHKeyValuePair.m in Sources */ = {isa = PBXBuildFile; fileRef = 741007BE1802F67D0002789A /* QHKeyValuePair.m */; };
 		741007C61802F67D0002789A /* QHOperatePlistFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 741007C01802F67D0002789A /* QHOperatePlistFile.m */; };
 		741007C71802F67D0002789A /* QHQueueDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 741007C21802F67D0002789A /* QHQueueDictionary.m */; };
@@ -31,6 +32,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		52B2351632C0A9F812904035 /* QHRecordUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHRecordUtil.h; sourceTree = "<group>"; };
+		52B23BC41F01BACEC161AAA0 /* QHRecordUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHRecordUtil.m; sourceTree = "<group>"; };
 		741007BD1802F67D0002789A /* QHKeyValuePair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHKeyValuePair.h; sourceTree = "<group>"; };
 		741007BE1802F67D0002789A /* QHKeyValuePair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHKeyValuePair.m; sourceTree = "<group>"; };
 		741007BF1802F67D0002789A /* QHOperatePlistFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHOperatePlistFile.h; sourceTree = "<group>"; };
@@ -99,6 +102,8 @@
 				741007C21802F67D0002789A /* QHQueueDictionary.m */,
 				741007C31802F67D0002789A /* ReflectPropertyValue.h */,
 				741007C41802F67D0002789A /* ReflectPropertyValue.m */,
+				52B2351632C0A9F812904035 /* QHRecordUtil.h */,
+				52B23BC41F01BACEC161AAA0 /* QHRecordUtil.m */,
 				B11F729517DDC4E900295F6F /* Supporting Files */,
 			);
 			path = CHENTool;
@@ -168,6 +173,7 @@
 				741007C51802F67D0002789A /* QHKeyValuePair.m in Sources */,
 				741007C71802F67D0002789A /* QHQueueDictionary.m in Sources */,
 				B11F729A17DDC4E900295F6F /* CHENTool.m in Sources */,
+				52B23BB9DB64060C5C55FE8C /* QHRecordUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
