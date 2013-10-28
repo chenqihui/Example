@@ -22,7 +22,7 @@
 
 - (void)finishWillRecord:(QHRecordUtil *)recordUtil;
 
-- (void)finishEndRecord:(QHRecordUtil *)recordUtil;
+- (void)finishEndRecord:(QHRecordUtil *)recordUtil path:(NSString *)szPath;
 
 - (void)stopWillRecord:(QHRecordUtil *)recordUtil;
 

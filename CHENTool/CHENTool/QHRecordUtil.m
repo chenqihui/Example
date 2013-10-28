@@ -15,6 +15,13 @@
 @synthesize m_delegate;
 @synthesize recordTime;
 
+- (void)dealloc
+{
+    [self stopRecord];
+    [self stopAudio];
+    [super dealloc];
+}
+
 - (void)startRecord:(NSString *)szFileName
 {
     if([m_delegate respondsToSelector:@selector(startWillRecord:)])
@@ -94,14 +101,29 @@
     
 }
 
-- (void)stopRecord:(NSString *)szPath
+- (void)stopRecord
 {
     if(m_avaudiorecord.isRecording)
     {
         [m_avaudiorecord stop];
     }
-    m_avaudiorecord = nil;
+    if(m_avaudiorecord != nil)
+    {
+        [m_avaudiorecord release];
+        m_avaudiorecord = nil;
+    }
     [self resetTimer];
+}
+
+- (void)stopRecord:(NSString *)szPath
+{
+    if([m_delegate respondsToSelector:@selector(stopWillRecord:)])
+        [m_delegate stopWillRecord:self];
+    
+    [self stopRecord];
+    
+    if([m_delegate respondsToSelector:@selector(stopEndRecord:)])
+        [m_delegate stopEndRecord:self];
 }
 
 - (void)playAudio:(NSString *)szPath
@@ -116,7 +138,7 @@
     [audioSession setActive:YES error:nil];
     
     NSURL* url=[NSURL fileURLWithPath:m_recordSavePath];
-    m_avaudioplayer=[[AVAudioPlayer alloc]initWithContentsOfURL:url error:nil];
+    m_avaudioplayer=[[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
     m_avaudioplayer.delegate=self;
     m_avaudioplayer.numberOfLoops=0;
     [m_avaudioplayer play];
@@ -125,17 +147,36 @@
         [m_delegate playEndAudio:self];
 }
 
+- (void)stopAudio
+{
+    if(m_avaudioplayer.isPlaying)
+    {
+        [m_avaudioplayer stop];
+    }
+    if(m_avaudioplayer != nil)
+    {
+        [m_avaudioplayer release];
+        m_avaudioplayer = nil;
+    }
+}
+
 - (void)stopAudio:(NSString *)szPath
 {
+    if([m_delegate respondsToSelector:@selector(stopWillAudio:)])
+        [m_delegate stopWillAudio:self];
     
+    [self stopAudio];
+    
+    if([m_delegate respondsToSelector:@selector(stopEndAudio:)])
+        [m_delegate stopEndAudio:self];
 }
 
 #pragma mark - AVAudioRecorderDelegate
 
 - (void)audioRecorderDidFinishRecording:(AVAudioRecorder *)recorder successfully:(BOOL)flag
 {
-    if([m_delegate respondsToSelector:@selector(finishEndRecord:)])
-        [m_delegate finishEndRecord:self];
+    if([m_delegate respondsToSelector:@selector(finishEndRecord:path:)])
+        [m_delegate finishEndRecord:self path:m_recordSavePath];
 }
 
 #pragma mark - AVAudioPlayerDelegate
@@ -185,6 +226,7 @@
     if (m_timer)
     {
         [m_timer invalidate];
+//        [m_timer release];
         m_timer = nil;
     }
 }
