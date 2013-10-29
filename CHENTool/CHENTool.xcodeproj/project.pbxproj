@@ -16,6 +16,7 @@
 		B11F729817DDC4E900295F6F /* CHENTool.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B11F729717DDC4E900295F6F /* CHENTool.h */; };
 		B11F729A17DDC4E900295F6F /* CHENTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B11F729917DDC4E900295F6F /* CHENTool.m */; };
 		B11F72DC17DDC8B000295F6F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B11F72DB17DDC8B000295F6F /* UIKit.framework */; };
+		B1519F92181F8DDE00DBB815 /* QHRecordHud.m in Sources */ = {isa = PBXBuildFile; fileRef = B1519F91181F8DDE00DBB815 /* QHRecordHud.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -48,6 +49,11 @@
 		B11F729717DDC4E900295F6F /* CHENTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHENTool.h; sourceTree = "<group>"; };
 		B11F729917DDC4E900295F6F /* CHENTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHENTool.m; sourceTree = "<group>"; };
 		B11F72DB17DDC8B000295F6F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B1519F90181F8DDE00DBB815 /* QHRecordHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHRecordHud.h; sourceTree = "<group>"; };
+		B1519F91181F8DDE00DBB815 /* QHRecordHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHRecordHud.m; sourceTree = "<group>"; };
+		B1519F93181FA74400DBB815 /* img_record_nine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_record_nine@2x.png"; sourceTree = "<group>"; };
+		B1519F94181FA74400DBB815 /* img_record_one@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_record_one@2x.png"; sourceTree = "<group>"; };
+		B1519F95181FA78300DBB815 /* img_record_progress@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_record_progress@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,8 @@
 				741007C41802F67D0002789A /* ReflectPropertyValue.m */,
 				52B2351632C0A9F812904035 /* QHRecordUtil.h */,
 				52B23BC41F01BACEC161AAA0 /* QHRecordUtil.m */,
+				B1519F90181F8DDE00DBB815 /* QHRecordHud.h */,
+				B1519F91181F8DDE00DBB815 /* QHRecordHud.m */,
 				B11F729517DDC4E900295F6F /* Supporting Files */,
 			);
 			path = CHENTool;
@@ -112,6 +120,9 @@
 		B11F729517DDC4E900295F6F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B1519F95181FA78300DBB815 /* img_record_progress@2x.png */,
+				B1519F93181FA74400DBB815 /* img_record_nine@2x.png */,
+				B1519F94181FA74400DBB815 /* img_record_one@2x.png */,
 				B11F729617DDC4E900295F6F /* CHENTool-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -172,6 +183,7 @@
 				741007C61802F67D0002789A /* QHOperatePlistFile.m in Sources */,
 				741007C51802F67D0002789A /* QHKeyValuePair.m in Sources */,
 				741007C71802F67D0002789A /* QHQueueDictionary.m in Sources */,
+				B1519F92181F8DDE00DBB815 /* QHRecordHud.m in Sources */,
 				B11F729A17DDC4E900295F6F /* CHENTool.m in Sources */,
 				52B23BB9DB64060C5C55FE8C /* QHRecordUtil.m in Sources */,
 			);

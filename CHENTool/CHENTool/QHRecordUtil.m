@@ -17,7 +17,9 @@
 
 - (void)dealloc
 {
-    [self stopRecord];
+    [m_recordTempPath release];
+    [m_recordSavePath release];
+    [self finishRecord];
     [self stopAudio];
     [super dealloc];
 }
@@ -34,10 +36,10 @@
     {
         m_recordSavePath = @"sound.wav";
     }
-    m_recordTempPath = [NSTemporaryDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"%@", m_recordSavePath]];
+    m_recordTempPath = [[NSTemporaryDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"%@", m_recordSavePath]] retain];
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];
-    m_recordSavePath = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"%@", m_recordSavePath]];
+    m_recordSavePath = [[documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"%@", m_recordSavePath]] retain];
     
     NSError * err = nil;
     
@@ -99,9 +101,11 @@
     
 	m_timer = [NSTimer scheduledTimerWithTimeInterval:TIME_UPDATE_ target:self selector:@selector(updateMeters) userInfo:nil repeats:YES];
     
+    [self showVoiceHudOrHide:YES];
+
 }
 
-- (void)stopRecord
+- (void)finishRecord
 {
     if(m_avaudiorecord.isRecording)
     {
@@ -113,6 +117,9 @@
         m_avaudiorecord = nil;
     }
     [self resetTimer];
+    [self showVoiceHudOrHide:NO];
+    AVAudioSession *audioSession=[AVAudioSession sharedInstance];
+    [audioSession setActive:NO error:nil];
 }
 
 - (void)stopRecord:(NSString *)szPath
@@ -120,7 +127,12 @@
     if([m_delegate respondsToSelector:@selector(stopWillRecord:)])
         [m_delegate stopWillRecord:self];
     
-    [self stopRecord];
+    [self finishRecord];
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    if ([fileManager fileExistsAtPath:m_recordTempPath])
+    {
+        [fileManager removeItemAtPath:m_recordTempPath error:nil];
+    }
     
     if([m_delegate respondsToSelector:@selector(stopEndRecord:)])
         [m_delegate stopEndRecord:self];
@@ -130,6 +142,8 @@
 {
     if([m_delegate respondsToSelector:@selector(playWillAudio:)])
         [m_delegate playWillAudio:self];
+    
+    [self stopAudio];
     
     m_recordSavePath = szPath;
     
@@ -158,6 +172,8 @@
         [m_avaudioplayer release];
         m_avaudioplayer = nil;
     }
+    AVAudioSession *audioSession=[AVAudioSession sharedInstance];
+    [audioSession setActive:NO error:nil];
 }
 
 - (void)stopAudio:(NSString *)szPath
@@ -183,7 +199,9 @@
 
 - (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
 {
-    if([m_delegate respondsToSelector:@selector(finishEndPlayAudio::)])
+    [self stopAudio];
+    
+    if([m_delegate respondsToSelector:@selector(finishEndPlayAudio:)])
         [m_delegate finishEndPlayAudio:self];
 }
 
@@ -200,7 +218,7 @@
 {
     recordTime += TIME_UPDATE_;
     
-//    if (voiceHud_)
+    if (m_recordHud)
     {
         /*  发送updateMeters消息来刷新平均和峰值功率。
          *  此计数是以对数刻度计量的，-160表示完全安静，
@@ -215,11 +233,29 @@
         double ALPHA = 0.05;
         double peakPowerForChannel = pow(10, (ALPHA * peakPower));
         
-//        [voiceHud_ setProgress:peakPowerForChannel];
+        [m_recordHud setProgress:peakPowerForChannel];
     }
 }
 
 #pragma mark - Helper Function
+
+-(void) showVoiceHudOrHide:(BOOL)yesOrNo{
+    
+    if (m_recordHud) {
+        [m_recordHud hide];
+        m_recordHud = nil;
+    }
+    
+    if (yesOrNo) {
+        
+        m_recordHud = [[QHRecordHud alloc] init];
+        [m_recordHud show];
+        [m_recordHud release];
+        
+    }else{
+        
+    }
+}
 
 -(void) resetTimer
 {

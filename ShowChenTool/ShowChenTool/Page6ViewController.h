@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Page6ViewController : UITableViewController
+@interface Page6ViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+{
+    UITableView *m_table;
+}
 
 @end

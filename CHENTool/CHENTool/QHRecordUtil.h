@@ -10,6 +10,8 @@
 
 #import <AVFoundation/AVFoundation.h>
 
+#import "QHRecordHud.h"
+
 @class QHRecordUtil;
 
 @protocol QHRecordUtilDelegate <NSObject>
@@ -54,6 +56,8 @@
     NSString *m_recordSavePath;
     
     float recordTime;
+    
+    QHRecordHud *m_recordHud;
 }
 
 @property (nonatomic, assign) id<QHRecordUtilDelegate> m_delegate;
@@ -66,5 +70,7 @@
 - (void)playAudio:(NSString *)szPath;
 
 - (void)stopAudio:(NSString *)szPath;
+
+- (void)finishRecord;
 
 @end

@@ -12,6 +12,8 @@
 {
     QHQueueDictionary *m_qds;
     QHRecordUtil *m_recordUtil;
+    
+    UIImageView *m_currentImageView;
 }
 
 @end
@@ -39,12 +41,19 @@
     m_recordUtil = [[QHRecordUtil alloc] init];
     m_recordUtil.m_delegate = self;
     
-    UIView *view = [[[UIView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 88, self.view.frame.size.width, 44)] autorelease];
-    [view setBackgroundColor:[UIColor blueColor]];
-    [self.view insertSubview:view aboveSubview:self.tableView];
+    m_table = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStylePlain];
+    m_table.dataSource = self;
+    m_table.delegate = self;
+//    [self.view addSubview:m_table];
     
-    UIButton *recordBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [recordBtn setFrame:CGRectMake(10, 2, view.frame.size.width - 20, 40)];
+    UIView *view = [[[UIView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 44, self.view.frame.size.width, 44)] autorelease];
+    [view setBackgroundColor:[UIColor blueColor]];
+//    [self.view insertSubview:view aboveSubview:self.tableView];
+    [self.view addSubview:view];
+    
+    UIButton *recordBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    [recordBtn setFrame:CGRectMake(20, 6, view.frame.size.width - 40, 32)];
+    [recordBtn setBackgroundColor:[UIColor greenColor]];
     [view addSubview:recordBtn];
     
     [recordBtn addTarget:self action:@selector(startRecordBtn:) forControlEvents:UIControlEventTouchDown];
@@ -54,26 +63,62 @@
 
 - (void)startRecordBtn:(UIButton *)sender
 {
-    [m_recordUtil startRecord:@"test.wav"];
+//    UIView *view = [[[UIView alloc] initWithFrame:CGRectMake(0, 0, 60, 60)] autorelease];
+//    [view setBackgroundColor:[UIColor redColor]];
+//    view.center = [[UIApplication sharedApplication] keyWindow].center;
+//    UIWindow *keywindow = [[UIApplication sharedApplication] keyWindow];
+//    [keywindow addSubview:view];
+    NSLog(@"startRecordBtn");
+    [m_recordUtil startRecord:[NSString stringWithFormat:@"test%d.wav", [m_qds count]]];
 }
 
 - (void)endRecordBtn:(UIButton *)sender
 {
-    
+    NSLog(@"endRecordBtn");
+    [m_recordUtil finishRecord];
 }
 
 - (void)cancelRecordBtn:(UIButton *)sender
 {
+    NSLog(@"cancelRecordBtn");
     [m_recordUtil stopRecord:nil];
+}
+
+- (void)listenRadio:(UIButton *)sender event:(id)event
+{
+    if(m_currentImageView != nil)
+    {
+        if([m_currentImageView isAnimating])
+            [m_currentImageView stopAnimating];
+        m_currentImageView = nil;
+        return;
+    }
+//    NSSet*touches =[event allTouches];
+//    UITouch*touch =[touches anyObject];
+//    CGPoint currentTouchPosition =[touch locationInView:m_ctable];
+//    NSIndexPath*indexPath =[m_ctable indexPathForRowAtPoint:currentTouchPosition];
+    CGRect f = [[sender superview] convertRect:sender.frame toView:m_table];
+    NSIndexPath *indexPath = [m_table indexPathForRowAtPoint:f.origin];
+    UITableViewCell *cell = [m_table cellForRowAtIndexPath:indexPath];
+    NSLog(@"%d", indexPath.row);
+    [m_recordUtil playAudio:[m_qds getValueForIndex:indexPath.row]];
+    
+    m_currentImageView = (UIImageView *)[cell.contentView viewWithTag:101];
+    [m_currentImageView startAnimating];
 }
 
 #pragma mark -
 
 - (void)finishEndRecord:(QHRecordUtil *)recordUtil path:(NSString *)szPath
 {
-    NSString *str = [[szPath retain] autorelease];
-    [m_qds addVlaue:str key:[NSNumber numberWithFloat:recordUtil.recordTime]];
-    [self.tableView reloadData];
+    [m_qds addVlaue:szPath key:[NSNumber numberWithFloat:recordUtil.recordTime]];
+    [m_table reloadData];
+}
+
+- (void)finishEndPlayAudio:(QHRecordUtil *)recordUtil
+{
+    [m_currentImageView stopAnimating];
+    m_currentImageView = nil;
 }
 
 #pragma mark - Table view data source
@@ -91,11 +136,12 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    if (cell)
+    if (!cell)
     {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cell"] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier] autorelease];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         
         NSMutableArray *arImages = [[NSMutableArray alloc] init];
         [arImages addObject:[UIImage imageNamed:@"img_messagerecord_one.png"]];
@@ -104,7 +150,7 @@
         
         UIButton *radiocontrol = [[UIButton buttonWithType:UIButtonTypeCustom] retain];
         [radiocontrol setFrame:CGRectMake(0, 0, self.view.frame.size.width - 20, 30)];
-        [radiocontrol addTarget:self action:@selector(listenRadio:) forControlEvents:UIControlEventTouchDown];
+        [radiocontrol addTarget:self action:@selector(listenRadio:event:) forControlEvents:UIControlEventTouchDown];
         [cell.contentView addSubview:radiocontrol];
         
         UILabel *radioLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 0, 30)];
