@@ -24,6 +24,9 @@
 		741008551802FAEA0002789A /* Test6ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7410084A1802FAEA0002789A /* Test6ViewController.m */; };
 		74378A9C17FED12D0050405F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74378A9B17FED12D0050405F /* QuartzCore.framework */; };
 		74863DD617FD883100D2B101 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74863DD517FD883100D2B101 /* AVFoundation.framework */; };
+		74BD0374181FFFEB00C93BE9 /* img_record_progress@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74BD0371181FFFEB00C93BE9 /* img_record_progress@2x.png */; };
+		74BD0375181FFFEB00C93BE9 /* img_record_nine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74BD0372181FFFEB00C93BE9 /* img_record_nine@2x.png */; };
+		74BD0376181FFFEB00C93BE9 /* img_record_one@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74BD0373181FFFEB00C93BE9 /* img_record_one@2x.png */; };
 		74BE77BA181EACE100ACCC71 /* Page6ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74BE77B9181EACE100ACCC71 /* Page6ViewController.m */; };
 		74BE77C0181EAEE300ACCC71 /* img_messagerecord_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74BE77BC181EAEE300ACCC71 /* img_messagerecord_btn@2x.png */; };
 		74BE77C1181EAEE300ACCC71 /* img_messagerecord_one@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74BE77BD181EAEE300ACCC71 /* img_messagerecord_one@2x.png */; };
@@ -107,6 +110,9 @@
 		7410084A1802FAEA0002789A /* Test6ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test6ViewController.m; sourceTree = "<group>"; };
 		74378A9B17FED12D0050405F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		74863DD517FD883100D2B101 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		74BD0371181FFFEB00C93BE9 /* img_record_progress@2x.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = "img_record_progress@2x.png"; path = "../../../CHENTool/CHENTool/img_record_progress@2x.png"; sourceTree = "<group>"; };
+		74BD0372181FFFEB00C93BE9 /* img_record_nine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = "img_record_nine@2x.png"; path = "../../../CHENTool/CHENTool/img_record_nine@2x.png"; sourceTree = "<group>"; };
+		74BD0373181FFFEB00C93BE9 /* img_record_one@2x.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = "img_record_one@2x.png"; path = "../../../CHENTool/CHENTool/img_record_one@2x.png"; sourceTree = "<group>"; };
 		74BE77B8181EACE100ACCC71 /* Page6ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page6ViewController.h; sourceTree = "<group>"; };
 		74BE77B9181EACE100ACCC71 /* Page6ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page6ViewController.m; sourceTree = "<group>"; };
 		74BE77BC181EAEE300ACCC71 /* img_messagerecord_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_messagerecord_btn@2x.png"; sourceTree = "<group>"; };
@@ -185,6 +191,9 @@
 		74BE77BB181EAED500ACCC71 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				74BD0371181FFFEB00C93BE9 /* img_record_progress@2x.png */,
+				74BD0372181FFFEB00C93BE9 /* img_record_nine@2x.png */,
+				74BD0373181FFFEB00C93BE9 /* img_record_one@2x.png */,
 				74BE77BC181EAEE300ACCC71 /* img_messagerecord_btn@2x.png */,
 				74BE77BD181EAEE300ACCC71 /* img_messagerecord_one@2x.png */,
 				74BE77BE181EAEE300ACCC71 /* img_messagerecord_three@2x.png */,
@@ -367,6 +376,7 @@
 				B11F72B717DDC5A900295F6F /* InfoPlist.strings in Resources */,
 				74BE77C2181EAEE300ACCC71 /* img_messagerecord_three@2x.png in Resources */,
 				74BE77C3181EAEE300ACCC71 /* img_messagerecord_two@2x.png in Resources */,
+				74BD0374181FFFEB00C93BE9 /* img_record_progress@2x.png in Resources */,
 				B11F72BF17DDC5A900295F6F /* Default.png in Resources */,
 				B11F72C117DDC5A900295F6F /* Default@2x.png in Resources */,
 				74DEB56917FBEF7E00FD024A /* testSource.plist in Resources */,
@@ -375,7 +385,9 @@
 				74BE77C0181EAEE300ACCC71 /* img_messagerecord_btn@2x.png in Resources */,
 				741008511802FAEA0002789A /* Test3ViewController.xib in Resources */,
 				741008531802FAEA0002789A /* Test4ViewController.xib in Resources */,
+				74BD0376181FFFEB00C93BE9 /* img_record_one@2x.png in Resources */,
 				741008361802FAD90002789A /* showToolListData.plist in Resources */,
+				74BD0375181FFFEB00C93BE9 /* img_record_nine@2x.png in Resources */,
 				7410084B1802FAEA0002789A /* Test5ViewController.xib in Resources */,
 				B11F72C917DDC5A900295F6F /* ViewController_iPhone.xib in Resources */,
 				74BE77C1181EAEE300ACCC71 /* img_messagerecord_one@2x.png in Resources */,
@@ -484,7 +496,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -508,7 +520,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

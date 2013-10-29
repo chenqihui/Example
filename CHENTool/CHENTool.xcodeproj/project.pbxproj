@@ -43,6 +43,9 @@
 		741007C21802F67D0002789A /* QHQueueDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHQueueDictionary.m; sourceTree = "<group>"; };
 		741007C31802F67D0002789A /* ReflectPropertyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReflectPropertyValue.h; sourceTree = "<group>"; };
 		741007C41802F67D0002789A /* ReflectPropertyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReflectPropertyValue.m; sourceTree = "<group>"; };
+		74BD036E181FFF8E00C93BE9 /* mic_normal_358x358@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mic_normal_358x358@2x.png"; sourceTree = "<group>"; };
+		74BD036F181FFF8E00C93BE9 /* mic_talk_358x358@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mic_talk_358x358@2x.png"; sourceTree = "<group>"; };
+		74BD0370181FFF8E00C93BE9 /* wave70x117@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wave70x117@2x.png"; sourceTree = "<group>"; };
 		B11F728F17DDC4E900295F6F /* libCHENTool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCHENTool.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B11F729217DDC4E900295F6F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B11F729617DDC4E900295F6F /* CHENTool-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CHENTool-Prefix.pch"; sourceTree = "<group>"; };
@@ -121,6 +124,9 @@
 			isa = PBXGroup;
 			children = (
 				B1519F95181FA78300DBB815 /* img_record_progress@2x.png */,
+				74BD036E181FFF8E00C93BE9 /* mic_normal_358x358@2x.png */,
+				74BD036F181FFF8E00C93BE9 /* mic_talk_358x358@2x.png */,
+				74BD0370181FFF8E00C93BE9 /* wave70x117@2x.png */,
 				B1519F93181FA74400DBB815 /* img_record_nine@2x.png */,
 				B1519F94181FA74400DBB815 /* img_record_one@2x.png */,
 				B11F729617DDC4E900295F6F /* CHENTool-Prefix.pch */,

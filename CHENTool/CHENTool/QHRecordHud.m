@@ -267,7 +267,6 @@
     CGRect frame3 = CGRectMake(164/2-50/2, 164/2-93.5/2, 179, 179);
     CGRect frame4 = CGRectMake(0, 0, 35, 58.5);
     
-    
 //    UIImageView * backBlackImageView = [[UIImageView alloc] initWithFrame:frame1];
 //    backBlackImageView.image = _IMAGE_UNDER;
 //    [self addSubview:backBlackImageView];
@@ -279,9 +278,8 @@
     [self addSubview:micNormalImageView];
     [micNormalImageView release];
     
-    
     _talkingImageView = [[UIImageView alloc] initWithFrame:frame3];
-    _talkingImageView.image = _IMAGE_MIC_TALKING;
+    _talkingImageView.image = _IMAGE_MIC_NORMAL;//_IMAGE_MIC_TALKING;
     [self addSubview:_talkingImageView];
     _talkingImageView.center = self.center;
     [_talkingImageView release];
@@ -357,7 +355,6 @@
 -(void) show{
     
     [_DEVICE_WINDOW addSubview:self];
-    
     [UIView animateWithDuration:0.25 animations:^{
         
         self.alpha = 1;

@@ -44,7 +44,7 @@
     m_table = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStylePlain];
     m_table.dataSource = self;
     m_table.delegate = self;
-//    [self.view addSubview:m_table];
+    [self.view addSubview:m_table];
     
     UIView *view = [[[UIView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 44, self.view.frame.size.width, 44)] autorelease];
     [view setBackgroundColor:[UIColor blueColor]];
