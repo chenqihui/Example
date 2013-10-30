@@ -107,12 +107,12 @@
 
 - (void)finishRecord
 {
-    if(m_avaudiorecord.isRecording)
-    {
-        [m_avaudiorecord stop];
-    }
     if(m_avaudiorecord != nil)
     {
+        if(m_avaudiorecord.isRecording)
+        {
+            [m_avaudiorecord stop];
+        }
         [m_avaudiorecord release];
         m_avaudiorecord = nil;
     }
@@ -145,7 +145,9 @@
     
     [self stopAudio];
     
-    m_recordSavePath = szPath;
+    if(m_recordSavePath != nil)
+        [m_recordSavePath release];
+    m_recordSavePath = [szPath retain];
     
     AVAudioSession *audioSession=[AVAudioSession sharedInstance];
     [audioSession setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -163,12 +165,12 @@
 
 - (void)stopAudio
 {
-    if(m_avaudioplayer.isPlaying)
-    {
-        [m_avaudioplayer stop];
-    }
     if(m_avaudioplayer != nil)
     {
+        if(m_avaudioplayer.isPlaying)
+        {
+            [m_avaudioplayer stop];
+        }
         [m_avaudioplayer release];
         m_avaudioplayer = nil;
     }
@@ -192,7 +194,7 @@
 - (void)audioRecorderDidFinishRecording:(AVAudioRecorder *)recorder successfully:(BOOL)flag
 {
     if([m_delegate respondsToSelector:@selector(finishEndRecord:path:)])
-        [m_delegate finishEndRecord:self path:m_recordSavePath];
+        [m_delegate finishEndRecord:self path:m_recordTempPath];
 }
 
 #pragma mark - AVAudioPlayerDelegate

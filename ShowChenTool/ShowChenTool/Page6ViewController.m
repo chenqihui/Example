@@ -37,6 +37,9 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemPlay target:self action:@selector(play)];
+    self.navigationItem.rightBarButtonItem = item;
+    
     m_qds = [[QHQueueDictionary alloc] init];
     m_recordUtil = [[QHRecordUtil alloc] init];
     m_recordUtil.m_delegate = self;
@@ -59,6 +62,12 @@
     [recordBtn addTarget:self action:@selector(startRecordBtn:) forControlEvents:UIControlEventTouchDown];
     [recordBtn addTarget:self action:@selector(endRecordBtn:) forControlEvents:UIControlEventTouchUpInside];
     [recordBtn addTarget:self action:@selector(cancelRecordBtn:) forControlEvents:UIControlEventTouchUpOutside];
+}
+
+- (void)play
+{
+    NSString *path = [NSTemporaryDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"test1.wav"]];
+    [m_recordUtil playAudio:path];
 }
 
 - (void)startRecordBtn:(UIButton *)sender
