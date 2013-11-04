@@ -8,12 +8,19 @@
 
 #import "ViewController.h"
 
+#define KEY_WINDOW  [[UIApplication sharedApplication]keyWindow]
+
 @interface ViewController ()
+{
+    NSMutableArray *m_arViews;
+}
 
 @end
 
 @implementation ViewController
 
+/*
+//数组排序的使用
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -49,6 +56,44 @@
 - (NSComparisonResult)caseInsensitiveCompare:(NSString *)aString
 {
     return NSOrderedDescending;
+}
+*/
+
+- (void)dealloc
+{
+    [m_arViews release];
+    [super dealloc];
+}
+
+- (void)viewDidLoad
+{
+    m_arViews = [NSMutableArray new];
+    UIPanGestureRecognizer *gesture = [[[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:)] autorelease];
+    [self.view addGestureRecognizer:gesture];
+}
+
+- (void)push:(UIViewController *)childViewController
+{
+    [m_arViews addObject:childViewController];
+    [self.view addSubview:childViewController.view];
+}
+
+- (void)pop
+{
+    
+}
+
+- (void)handleGesture:(UIPanGestureRecognizer *)recoginzer
+{
+    if ([m_arViews count] <= 1) return;
+    
+    if (recoginzer.state == UIGestureRecognizerStateBegan)
+    {
+    }else if (recoginzer.state == UIGestureRecognizerStateEnded)
+    {
+    }else if (recoginzer.state == UIGestureRecognizerStateCancelled)
+    {
+    }
 }
 
 @end
