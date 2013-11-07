@@ -9,14 +9,18 @@
 #import "ViewController.h"
 
 #import "NextViewViewController.h"
+#import "SWTableViewCell.h"
 
 #define KEY_WINDOW  [[UIApplication sharedApplication]keyWindow]
 
-@interface ViewController ()
+@interface ViewController ()<UITableViewDataSource, UITableViewDelegate, SWTableViewCellDelegate>
 {
     NSMutableArray *m_arViews;
     CGPoint startTouch;
     UIViewController *m_lastViewController;
+    
+    UITableView *m_table;
+    NSMutableArray *_testArray;
 }
 
 @property (nonatomic,assign) BOOL isMoving;
@@ -83,6 +87,23 @@
     [self.view addSubview:btn];
     
     [btn addTarget:self action:@selector(next:) forControlEvents:UIControlEventTouchDown];
+    
+    [self initTabelView];
+}
+
+- (void)initTabelView
+{
+    m_table = [[UITableView alloc] initWithFrame:self.view.bounds];
+    m_table.dataSource = self;
+    m_table.delegate = self;
+    [self.view addSubview:m_table];
+    
+    _testArray = [[NSMutableArray alloc] init];
+    
+    // Add test data to our test array
+    [_testArray addObject:[NSDate date]];
+    [_testArray addObject:[NSDate date]];
+    [_testArray addObject:[NSDate date]];
 }
 
 - (void)next:(id)sender
@@ -155,6 +176,49 @@
 //    x = x>320?320:x;
 //    x = x<0?0:x;
     [m_lastViewController.view setFrame:CGRectMake(x, m_lastViewController.view.frame.origin.y, m_lastViewController.view.frame.size.width, m_lastViewController.view.frame.size.height)];
+}
+
+#pragma mark - table
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [_testArray count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *cellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if(!cell)
+    {
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:cellIdentifier] autorelease];
+    }
+    cell.textLabel.text = [[_testArray objectAtIndex:[indexPath row]] description];
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [self next:nil];
+}
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        [_testArray removeObjectAtIndex:indexPath.row];
+        // Delete the row from the data source.
+        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        
+    }
+    else if (editingStyle == UITableViewCellEditingStyleInsert) {
+        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
+    }
 }
 
 @end

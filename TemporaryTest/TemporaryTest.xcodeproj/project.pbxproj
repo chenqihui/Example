@@ -22,6 +22,11 @@
 		B1586992180CDAA6000B388B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1586974180CDAA6000B388B /* UIKit.framework */; };
 		B158699A180CDAA6000B388B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1586998180CDAA6000B388B /* InfoPlist.strings */; };
 		B158699C180CDAA6000B388B /* TemporaryTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B158699B180CDAA6000B388B /* TemporaryTestTests.m */; };
+		B17C8D6F182B883D00C25368 /* SWTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B17C8D6E182B883D00C25368 /* SWTableViewCell.m */; };
+		B17C8D74182B885100C25368 /* list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B17C8D70182B885100C25368 /* list@2x.png */; };
+		B17C8D75182B885100C25368 /* check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B17C8D71182B885100C25368 /* check@2x.png */; };
+		B17C8D76182B885100C25368 /* cross@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B17C8D72182B885100C25368 /* cross@2x.png */; };
+		B17C8D77182B885100C25368 /* clock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B17C8D73182B885100C25368 /* clock@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +61,12 @@
 		B1586997180CDAA6000B388B /* TemporaryTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TemporaryTestTests-Info.plist"; sourceTree = "<group>"; };
 		B1586999180CDAA6000B388B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B158699B180CDAA6000B388B /* TemporaryTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TemporaryTestTests.m; sourceTree = "<group>"; };
+		B17C8D6D182B883D00C25368 /* SWTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWTableViewCell.h; sourceTree = "<group>"; };
+		B17C8D6E182B883D00C25368 /* SWTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWTableViewCell.m; sourceTree = "<group>"; };
+		B17C8D70182B885100C25368 /* list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list@2x.png"; sourceTree = "<group>"; };
+		B17C8D71182B885100C25368 /* check@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check@2x.png"; sourceTree = "<group>"; };
+		B17C8D72182B885100C25368 /* cross@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cross@2x.png"; sourceTree = "<group>"; };
+		B17C8D73182B885100C25368 /* clock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +133,8 @@
 				B1586986180CDAA6000B388B /* ViewController.m */,
 				B116C2331828BFD00085A823 /* NextViewViewController.h */,
 				B116C2341828BFD00085A823 /* NextViewViewController.m */,
+				B17C8D6D182B883D00C25368 /* SWTableViewCell.h */,
+				B17C8D6E182B883D00C25368 /* SWTableViewCell.m */,
 				B1586988180CDAA6000B388B /* Images.xcassets */,
 				B1586977180CDAA6000B388B /* Supporting Files */,
 			);
@@ -131,6 +144,10 @@
 		B1586977180CDAA6000B388B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B17C8D70182B885100C25368 /* list@2x.png */,
+				B17C8D71182B885100C25368 /* check@2x.png */,
+				B17C8D72182B885100C25368 /* cross@2x.png */,
+				B17C8D73182B885100C25368 /* clock@2x.png */,
 				B1586978180CDAA6000B388B /* TemporaryTest-Info.plist */,
 				B1586979180CDAA6000B388B /* InfoPlist.strings */,
 				B158697C180CDAA6000B388B /* main.m */,
@@ -233,9 +250,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B17C8D75182B885100C25368 /* check@2x.png in Resources */,
+				B17C8D74182B885100C25368 /* list@2x.png in Resources */,
 				B1586989180CDAA6000B388B /* Images.xcassets in Resources */,
 				B158697B180CDAA6000B388B /* InfoPlist.strings in Resources */,
+				B17C8D77182B885100C25368 /* clock@2x.png in Resources */,
 				B1586984180CDAA6000B388B /* Main.storyboard in Resources */,
+				B17C8D76182B885100C25368 /* cross@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B116C2351828BFD00085A823 /* NextViewViewController.m in Sources */,
+				B17C8D6F182B883D00C25368 /* SWTableViewCell.m in Sources */,
 				B1586987180CDAA6000B388B /* ViewController.m in Sources */,
 				B1586981180CDAA6000B388B /* AppDelegate.m in Sources */,
 				B158697D180CDAA6000B388B /* main.m in Sources */,

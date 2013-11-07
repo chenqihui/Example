@@ -13,6 +13,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7)
+    {
+        self.window.frame =  CGRectMake(0,20,self.window.frame.size.width,self.window.frame.size.height-20);
+        UIApplication *myApp = [UIApplication sharedApplication];
+        
+        [myApp setStatusBarStyle: UIStatusBarStyleLightContent];
+    }
     return YES;
 }
 							
