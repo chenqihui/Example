@@ -77,18 +77,35 @@
 
 - (void)viewDidLoad
 {
-    m_arViews = [NSMutableArray new];
-    [m_arViews addObject:self];
-    UIPanGestureRecognizer *gesture = [[[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:)] autorelease];
-    [self.view addGestureRecognizer:gesture];
+//    m_arViews = [NSMutableArray new];
+//    [m_arViews addObject:self];
+//    UIPanGestureRecognizer *gesture = [[[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:)] autorelease];
+//    [self.view addGestureRecognizer:gesture];
+//    
+//    UIButton *btn = [UIButton buttonWithType:UIButtonTypeContactAdd];
+//    btn.center = self.view.center;
+//    [self.view addSubview:btn];
+//    
+//    [btn addTarget:self action:@selector(next:) forControlEvents:UIControlEventTouchDown];
+//    
+//    [self initTabelView];
     
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeContactAdd];
-    btn.center = self.view.center;
-    [self.view addSubview:btn];
+    [self initTwoView];
+}
+
+- (void)initTwoView
+{
+    UIView *one = [[[UIView alloc] initWithFrame:self.view.bounds] autorelease];
+    [one setBackgroundColor:[UIColor blueColor]];
+    [self.view addSubview:one];
+    UIPanGestureRecognizer *gestureOne = [[[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handleGestureOne:)] autorelease];
+    [one addGestureRecognizer:gestureOne];
     
-    [btn addTarget:self action:@selector(next:) forControlEvents:UIControlEventTouchDown];
-    
-    [self initTabelView];
+    UIView *two = [[[UIView alloc] initWithFrame:CGRectMake(20, 20, self.view.bounds.size.width - 40, self.view.bounds.size.height - 40)] autorelease];
+    [two setBackgroundColor:[UIColor redColor]];
+    [self.view addSubview:two];
+    UIPanGestureRecognizer *gestureTwo = [[[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handleGestureTwo:)] autorelease];
+    [two addGestureRecognizer:gestureTwo];
 }
 
 - (void)initTabelView
@@ -104,6 +121,44 @@
     [_testArray addObject:[NSDate date]];
     [_testArray addObject:[NSDate date]];
     [_testArray addObject:[NSDate date]];
+}
+
+- (void)handleGestureOne:(UIPanGestureRecognizer *)recoginzer
+{
+    CGPoint touchPoint = [recoginzer locationInView:KEY_WINDOW];
+    
+    if (recoginzer.state == UIGestureRecognizerStateBegan)
+    {
+        _isMoving = YES;
+        startTouch = touchPoint;
+    }else if (recoginzer.state == UIGestureRecognizerStateEnded)
+    {
+        _isMoving = NO;
+    }else if (recoginzer.state == UIGestureRecognizerStateCancelled)
+    {
+        _isMoving = NO;
+    }
+    float x = touchPoint.x - startTouch.x;
+    NSLog(@"handleGestureOne:Move to:%f", x);
+}
+
+- (void)handleGestureTwo:(UIPanGestureRecognizer *)recoginzer
+{
+    CGPoint touchPoint = [recoginzer locationInView:KEY_WINDOW];
+    
+    if (recoginzer.state == UIGestureRecognizerStateBegan)
+    {
+        _isMoving = YES;
+        startTouch = touchPoint;
+    }else if (recoginzer.state == UIGestureRecognizerStateEnded)
+    {
+        _isMoving = NO;
+    }else if (recoginzer.state == UIGestureRecognizerStateCancelled)
+    {
+        _isMoving = NO;
+    }
+    float x = touchPoint.x - startTouch.x;
+    NSLog(@"handleGestureTwo:Move to:%f", x);
 }
 
 - (void)next:(id)sender
