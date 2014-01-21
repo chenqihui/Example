@@ -39,6 +39,10 @@
     m_table.dataSource = self;
     m_table.delegate = self;
     [self.view addSubview:m_table];
+    [RDP startServer];
+    
+    
+    NSLog(@"tabelY:%f", m_table.frame.origin.y);
     
 }
 
@@ -101,6 +105,32 @@
     
     if(mvc != nil)
         [self.navigationController pushViewController:mvc animated:YES];
+}
+
+#pragma mark scroll
+
+static int _lastPosition;
+
+static BOOL m_bScoll;
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    int currentPostion = scrollView.contentOffset.y;
+    printN(currentPostion);
+    if (currentPostion - _lastPosition > 20  && currentPostion > 0)//这个地方加上 currentPostion > 0 即可）
+    {
+        if(m_table.frame.size.height >= m_table.contentSize.height)
+            return;
+        _lastPosition = currentPostion;
+    }
+    else if ((_lastPosition - currentPostion > 20) && (currentPostion  <= scrollView.contentSize.height-scrollView.bounds.size.height-20) ) //这个地方加上后边那个即可，也不知道为什么，再减20才行
+    {
+        if(!m_bScoll)
+            return;
+        _lastPosition = currentPostion;
+        
+        NSLog(@"ScrollDown now");
+    }
 }
 
 @end

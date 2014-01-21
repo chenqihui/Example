@@ -77,20 +77,9 @@
 
 - (void)viewDidLoad
 {
-//    m_arViews = [NSMutableArray new];
-//    [m_arViews addObject:self];
-//    UIPanGestureRecognizer *gesture = [[[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:)] autorelease];
-//    [self.view addGestureRecognizer:gesture];
-//    
-//    UIButton *btn = [UIButton buttonWithType:UIButtonTypeContactAdd];
-//    btn.center = self.view.center;
-//    [self.view addSubview:btn];
-//    
-//    [btn addTarget:self action:@selector(next:) forControlEvents:UIControlEventTouchDown];
-//    
-//    [self initTabelView];
+    [self initTabelView];
     
-    [self initTwoView];
+//    [self initTwoView];
 }
 
 - (void)initTwoView
@@ -110,6 +99,17 @@
 
 - (void)initTabelView
 {
+    m_arViews = [NSMutableArray new];
+    [m_arViews addObject:self];
+    UIPanGestureRecognizer *gesture = [[[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:)] autorelease];
+    [self.view addGestureRecognizer:gesture];
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeContactAdd];
+    btn.center = self.view.center;
+    [self.view addSubview:btn];
+    
+    [btn addTarget:self action:@selector(next:) forControlEvents:UIControlEventTouchDown];
+    
     m_table = [[UITableView alloc] initWithFrame:self.view.bounds];
     m_table.dataSource = self;
     m_table.delegate = self;

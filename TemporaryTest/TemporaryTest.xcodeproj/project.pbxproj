@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B101856E1834ACDA0038DD34 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = B10185651834ACDA0038DD34 /* FMDatabase.m */; };
+		B101856F1834ACDA0038DD34 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B10185671834ACDA0038DD34 /* FMDatabaseAdditions.m */; };
+		B10185701834ACDA0038DD34 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = B10185691834ACDA0038DD34 /* FMDatabasePool.m */; };
+		B10185711834ACDA0038DD34 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = B101856B1834ACDA0038DD34 /* FMDatabaseQueue.m */; };
+		B10185721834ACDA0038DD34 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = B101856D1834ACDA0038DD34 /* FMResultSet.m */; };
+		B10185741834AEE60038DD34 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B10185731834AEE60038DD34 /* libsqlite3.dylib */; };
 		B116C2351828BFD00085A823 /* NextViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B116C2341828BFD00085A823 /* NextViewViewController.m */; };
 		B1586971180CDAA6000B388B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1586970180CDAA6000B388B /* Foundation.framework */; };
 		B1586973180CDAA6000B388B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1586972180CDAA6000B388B /* CoreGraphics.framework */; };
@@ -27,6 +33,10 @@
 		B17C8D75182B885100C25368 /* check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B17C8D71182B885100C25368 /* check@2x.png */; };
 		B17C8D76182B885100C25368 /* cross@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B17C8D72182B885100C25368 /* cross@2x.png */; };
 		B17C8D77182B885100C25368 /* clock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B17C8D73182B885100C25368 /* clock@2x.png */; };
+		B18DCCA71856A0E80083F03C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B18DCCA61856A0E80083F03C /* LoginViewController.m */; };
+		B18DCCAA1856A29F0083F03C /* UIView+UIViewExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = B18DCCA91856A29F0083F03C /* UIView+UIViewExtend.m */; };
+		B18DCCAF1856E7100083F03C /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = B18DCCAE1856E7100083F03C /* AsyncSocket.m */; };
+		B18DCCB11856E7270083F03C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18DCCB01856E7270083F03C /* CFNetwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +50,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B10185641834ACDA0038DD34 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		B10185651834ACDA0038DD34 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		B10185661834ACDA0038DD34 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		B10185671834ACDA0038DD34 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		B10185681834ACDA0038DD34 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		B10185691834ACDA0038DD34 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		B101856A1834ACDA0038DD34 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		B101856B1834ACDA0038DD34 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		B101856C1834ACDA0038DD34 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		B101856D1834ACDA0038DD34 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		B10185731834AEE60038DD34 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		B116C2331828BFD00085A823 /* NextViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextViewViewController.h; sourceTree = "<group>"; };
 		B116C2341828BFD00085A823 /* NextViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextViewViewController.m; sourceTree = "<group>"; };
 		B158696D180CDAA6000B388B /* TemporaryTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TemporaryTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +88,13 @@
 		B17C8D71182B885100C25368 /* check@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check@2x.png"; sourceTree = "<group>"; };
 		B17C8D72182B885100C25368 /* cross@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cross@2x.png"; sourceTree = "<group>"; };
 		B17C8D73182B885100C25368 /* clock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock@2x.png"; sourceTree = "<group>"; };
+		B18DCCA51856A0E80083F03C /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		B18DCCA61856A0E80083F03C /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		B18DCCA81856A29F0083F03C /* UIView+UIViewExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+UIViewExtend.h"; sourceTree = "<group>"; };
+		B18DCCA91856A29F0083F03C /* UIView+UIViewExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+UIViewExtend.m"; sourceTree = "<group>"; };
+		B18DCCAD1856E7100083F03C /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
+		B18DCCAE1856E7100083F03C /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
+		B18DCCB01856E7270083F03C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +102,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B18DCCB11856E7270083F03C /* CFNetwork.framework in Frameworks */,
+				B10185741834AEE60038DD34 /* libsqlite3.dylib in Frameworks */,
 				B1586973180CDAA6000B388B /* CoreGraphics.framework in Frameworks */,
 				B1586975180CDAA6000B388B /* UIKit.framework in Frameworks */,
 				B1586971180CDAA6000B388B /* Foundation.framework in Frameworks */,
@@ -93,6 +123,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B10185631834ACDA0038DD34 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				B10185641834ACDA0038DD34 /* FMDatabase.h */,
+				B10185651834ACDA0038DD34 /* FMDatabase.m */,
+				B10185661834ACDA0038DD34 /* FMDatabaseAdditions.h */,
+				B10185671834ACDA0038DD34 /* FMDatabaseAdditions.m */,
+				B10185681834ACDA0038DD34 /* FMDatabasePool.h */,
+				B10185691834ACDA0038DD34 /* FMDatabasePool.m */,
+				B101856A1834ACDA0038DD34 /* FMDatabaseQueue.h */,
+				B101856B1834ACDA0038DD34 /* FMDatabaseQueue.m */,
+				B101856C1834ACDA0038DD34 /* FMResultSet.h */,
+				B101856D1834ACDA0038DD34 /* FMResultSet.m */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
 		B1586964180CDAA6000B388B = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +162,8 @@
 		B158696F180CDAA6000B388B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B18DCCB01856E7270083F03C /* CFNetwork.framework */,
+				B10185731834AEE60038DD34 /* libsqlite3.dylib */,
 				B1586970180CDAA6000B388B /* Foundation.framework */,
 				B1586972180CDAA6000B388B /* CoreGraphics.framework */,
 				B1586974180CDAA6000B388B /* UIKit.framework */,
@@ -126,6 +175,7 @@
 		B1586976180CDAA6000B388B /* TemporaryTest */ = {
 			isa = PBXGroup;
 			children = (
+				B10185631834ACDA0038DD34 /* FMDB */,
 				B158697F180CDAA6000B388B /* AppDelegate.h */,
 				B1586980180CDAA6000B388B /* AppDelegate.m */,
 				B1586982180CDAA6000B388B /* Main.storyboard */,
@@ -135,6 +185,12 @@
 				B116C2341828BFD00085A823 /* NextViewViewController.m */,
 				B17C8D6D182B883D00C25368 /* SWTableViewCell.h */,
 				B17C8D6E182B883D00C25368 /* SWTableViewCell.m */,
+				B18DCCAD1856E7100083F03C /* AsyncSocket.h */,
+				B18DCCAE1856E7100083F03C /* AsyncSocket.m */,
+				B18DCCA51856A0E80083F03C /* LoginViewController.h */,
+				B18DCCA61856A0E80083F03C /* LoginViewController.m */,
+				B18DCCA81856A29F0083F03C /* UIView+UIViewExtend.h */,
+				B18DCCA91856A29F0083F03C /* UIView+UIViewExtend.m */,
 				B1586988180CDAA6000B388B /* Images.xcassets */,
 				B1586977180CDAA6000B388B /* Supporting Files */,
 			);
@@ -276,10 +332,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				B116C2351828BFD00085A823 /* NextViewViewController.m in Sources */,
+				B18DCCAF1856E7100083F03C /* AsyncSocket.m in Sources */,
 				B17C8D6F182B883D00C25368 /* SWTableViewCell.m in Sources */,
 				B1586987180CDAA6000B388B /* ViewController.m in Sources */,
+				B101856E1834ACDA0038DD34 /* FMDatabase.m in Sources */,
+				B10185721834ACDA0038DD34 /* FMResultSet.m in Sources */,
+				B18DCCAA1856A29F0083F03C /* UIView+UIViewExtend.m in Sources */,
 				B1586981180CDAA6000B388B /* AppDelegate.m in Sources */,
+				B10185701834ACDA0038DD34 /* FMDatabasePool.m in Sources */,
+				B101856F1834ACDA0038DD34 /* FMDatabaseAdditions.m in Sources */,
 				B158697D180CDAA6000B388B /* main.m in Sources */,
+				B18DCCA71856A0E80083F03C /* LoginViewController.m in Sources */,
+				B10185711834ACDA0038DD34 /* FMDatabaseQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

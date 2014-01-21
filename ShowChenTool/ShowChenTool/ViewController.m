@@ -40,6 +40,8 @@
         _m_dataMutableArray = [data retain];
         return @"over";
     }];
+//    self.automaticallyAdjustsScrollViewInsets = NO;
+    NSLog(@"tabelY:%f", _m_myShowTableView.frame.origin.y);
 }
 
 #pragma mark - UITableViewDataSource

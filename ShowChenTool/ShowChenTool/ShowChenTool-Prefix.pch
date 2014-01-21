@@ -16,4 +16,6 @@
 
 #import "ThirdTool-Prefix.pch"
 
+#import "TagDefine.h"
+
 #endif

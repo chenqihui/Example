@@ -49,6 +49,11 @@
 		B158262A17E8423E0064A539 /* libThirdTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B158262917E842310064A539 /* libThirdTool.a */; };
 		B158262F17E842DC0064A539 /* Page2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B158262E17E842DC0064A539 /* Page2ViewController.m */; };
 		B1960A8F17E19598001D4F7F /* Page1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1960A8E17E19598001D4F7F /* Page1ViewController.m */; };
+		B1B3C957188E41C100ECB2DF /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B3C956188E41C100ECB2DF /* libc++.dylib */; };
+		B1B3C959188E41CB00ECB2DF /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B3C958188E41CB00ECB2DF /* MobileCoreServices.framework */; };
+		B1B3C95B188E41D400ECB2DF /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B3C95A188E41D400ECB2DF /* CoreMotion.framework */; };
+		B1B3C95D188E41DF00ECB2DF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B3C95C188E41DF00ECB2DF /* CFNetwork.framework */; };
+		B1B3C960188E651D00ECB2DF /* Page7ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B3C95F188E651D00ECB2DF /* Page7ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,9 +115,9 @@
 		7410084A1802FAEA0002789A /* Test6ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test6ViewController.m; sourceTree = "<group>"; };
 		74378A9B17FED12D0050405F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		74863DD517FD883100D2B101 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		74BD0371181FFFEB00C93BE9 /* img_record_progress@2x.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = "img_record_progress@2x.png"; path = "../../../CHENTool/CHENTool/img_record_progress@2x.png"; sourceTree = "<group>"; };
-		74BD0372181FFFEB00C93BE9 /* img_record_nine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = "img_record_nine@2x.png"; path = "../../../CHENTool/CHENTool/img_record_nine@2x.png"; sourceTree = "<group>"; };
-		74BD0373181FFFEB00C93BE9 /* img_record_one@2x.png */ = {isa = PBXFileReference; lastKnownFileType = file; name = "img_record_one@2x.png"; path = "../../../CHENTool/CHENTool/img_record_one@2x.png"; sourceTree = "<group>"; };
+		74BD0371181FFFEB00C93BE9 /* img_record_progress@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "img_record_progress@2x.png"; path = "../../../CHENTool/CHENTool/img_record_progress@2x.png"; sourceTree = "<group>"; };
+		74BD0372181FFFEB00C93BE9 /* img_record_nine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "img_record_nine@2x.png"; path = "../../../CHENTool/CHENTool/img_record_nine@2x.png"; sourceTree = "<group>"; };
+		74BD0373181FFFEB00C93BE9 /* img_record_one@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "img_record_one@2x.png"; path = "../../../CHENTool/CHENTool/img_record_one@2x.png"; sourceTree = "<group>"; };
 		74BE77B8181EACE100ACCC71 /* Page6ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page6ViewController.h; sourceTree = "<group>"; };
 		74BE77B9181EACE100ACCC71 /* Page6ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page6ViewController.m; sourceTree = "<group>"; };
 		74BE77BC181EAEE300ACCC71 /* img_messagerecord_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_messagerecord_btn@2x.png"; sourceTree = "<group>"; };
@@ -143,6 +148,13 @@
 		B158262E17E842DC0064A539 /* Page2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page2ViewController.m; sourceTree = "<group>"; };
 		B1960A8D17E19598001D4F7F /* Page1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page1ViewController.h; sourceTree = "<group>"; };
 		B1960A8E17E19598001D4F7F /* Page1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page1ViewController.m; sourceTree = "<group>"; };
+		B1B3C8D6188E00C000ECB2DF /* TagDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TagDefine.h; sourceTree = "<group>"; };
+		B1B3C956188E41C100ECB2DF /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		B1B3C958188E41CB00ECB2DF /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		B1B3C95A188E41D400ECB2DF /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		B1B3C95C188E41DF00ECB2DF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B1B3C95E188E651D00ECB2DF /* Page7ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page7ViewController.h; sourceTree = "<group>"; };
+		B1B3C95F188E651D00ECB2DF /* Page7ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page7ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +162,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1B3C95D188E41DF00ECB2DF /* CFNetwork.framework in Frameworks */,
+				B1B3C95B188E41D400ECB2DF /* CoreMotion.framework in Frameworks */,
+				B1B3C959188E41CB00ECB2DF /* MobileCoreServices.framework in Frameworks */,
+				B1B3C957188E41C100ECB2DF /* libc++.dylib in Frameworks */,
 				74378A9C17FED12D0050405F /* QuartzCore.framework in Frameworks */,
 				74863DD617FD883100D2B101 /* AVFoundation.framework in Frameworks */,
 				B158262A17E8423E0064A539 /* libThirdTool.a in Frameworks */,
@@ -224,6 +240,10 @@
 		B11F72AB17DDC5A900295F6F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B1B3C95C188E41DF00ECB2DF /* CFNetwork.framework */,
+				B1B3C95A188E41D400ECB2DF /* CoreMotion.framework */,
+				B1B3C958188E41CB00ECB2DF /* MobileCoreServices.framework */,
+				B1B3C956188E41C100ECB2DF /* libc++.dylib */,
 				74378A9B17FED12D0050405F /* QuartzCore.framework */,
 				74863DD517FD883100D2B101 /* AVFoundation.framework */,
 				B11F72AC17DDC5A900295F6F /* UIKit.framework */,
@@ -236,6 +256,7 @@
 		B11F72B217DDC5A900295F6F /* ShowChenTool */ = {
 			isa = PBXGroup;
 			children = (
+				B1B3C8D6188E00C000ECB2DF /* TagDefine.h */,
 				74BE77BB181EAED500ACCC71 /* image */,
 				B11F72BB17DDC5A900295F6F /* AppDelegate.h */,
 				B11F72BC17DDC5A900295F6F /* AppDelegate.m */,
@@ -253,9 +274,11 @@
 				741008311802F9F90002789A /* Page4ViewController.m */,
 				741007CD1802F6920002789A /* Page5ViewController.h */,
 				741007CE1802F6920002789A /* Page5ViewController.m */,
+				741008371802FAEA0002789A /* test */,
 				74BE77B8181EACE100ACCC71 /* Page6ViewController.h */,
 				74BE77B9181EACE100ACCC71 /* Page6ViewController.m */,
-				741008371802FAEA0002789A /* test */,
+				B1B3C95E188E651D00ECB2DF /* Page7ViewController.h */,
+				B1B3C95F188E651D00ECB2DF /* Page7ViewController.m */,
 				B11F72B317DDC5A900295F6F /* Supporting Files */,
 			);
 			path = ShowChenTool;
@@ -404,6 +427,7 @@
 			files = (
 				741008541802FAEA0002789A /* Test5ViewController.m in Sources */,
 				7410084E1802FAEA0002789A /* Test2ViewController.m in Sources */,
+				B1B3C960188E651D00ECB2DF /* Page7ViewController.m in Sources */,
 				74BE77BA181EACE100ACCC71 /* Page6ViewController.m in Sources */,
 				741008321802F9F90002789A /* Page4ViewController.m in Sources */,
 				741008551802FAEA0002789A /* Test6ViewController.m in Sources */,
@@ -496,7 +520,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -520,7 +544,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
