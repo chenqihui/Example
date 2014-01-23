@@ -48,6 +48,7 @@
 		B11F72D817DDC5D300295F6F /* libCHENTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B11F72D717DDC5C900295F6F /* libCHENTool.a */; };
 		B158262A17E8423E0064A539 /* libThirdTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B158262917E842310064A539 /* libThirdTool.a */; };
 		B158262F17E842DC0064A539 /* Page2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B158262E17E842DC0064A539 /* Page2ViewController.m */; };
+		B18360241891083200ED7EFF /* Test7ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B18360231891083200ED7EFF /* Test7ViewController.m */; };
 		B1960A8F17E19598001D4F7F /* Page1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1960A8E17E19598001D4F7F /* Page1ViewController.m */; };
 		B1B3C957188E41C100ECB2DF /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B3C956188E41C100ECB2DF /* libc++.dylib */; };
 		B1B3C959188E41CB00ECB2DF /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B3C958188E41CB00ECB2DF /* MobileCoreServices.framework */; };
@@ -146,6 +147,8 @@
 		B158262417E842300064A539 /* ThirdTool.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ThirdTool.xcodeproj; path = ../ThirdTool/ThirdTool.xcodeproj; sourceTree = "<group>"; };
 		B158262D17E842DC0064A539 /* Page2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page2ViewController.h; sourceTree = "<group>"; };
 		B158262E17E842DC0064A539 /* Page2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page2ViewController.m; sourceTree = "<group>"; };
+		B18360221891083200ED7EFF /* Test7ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test7ViewController.h; sourceTree = "<group>"; };
+		B18360231891083200ED7EFF /* Test7ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test7ViewController.m; sourceTree = "<group>"; };
 		B1960A8D17E19598001D4F7F /* Page1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page1ViewController.h; sourceTree = "<group>"; };
 		B1960A8E17E19598001D4F7F /* Page1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page1ViewController.m; sourceTree = "<group>"; };
 		B1B3C8D6188E00C000ECB2DF /* TagDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TagDefine.h; sourceTree = "<group>"; };
@@ -200,6 +203,8 @@
 				741008481802FAEA0002789A /* Test5ViewController.m */,
 				741008491802FAEA0002789A /* Test6ViewController.h */,
 				7410084A1802FAEA0002789A /* Test6ViewController.m */,
+				B18360221891083200ED7EFF /* Test7ViewController.h */,
+				B18360231891083200ED7EFF /* Test7ViewController.m */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -439,6 +444,7 @@
 				741008521802FAEA0002789A /* Test4ViewController.m in Sources */,
 				7410084C1802FAEA0002789A /* LotteryEntry.m in Sources */,
 				7410084D1802FAEA0002789A /* Test1ViewController.m in Sources */,
+				B18360241891083200ED7EFF /* Test7ViewController.m in Sources */,
 				B11F72C617DDC5A900295F6F /* ViewController.m in Sources */,
 				B1960A8F17E19598001D4F7F /* Page1ViewController.m in Sources */,
 				B158262F17E842DC0064A539 /* Page2ViewController.m in Sources */,
