@@ -38,7 +38,7 @@ typedef enum
 
 @property (nonatomic, assign) int NumberB;
 
-@property (nonatomic, assign) NSString *strOperate;
+@property (nonatomic, assign) NSString *Operate;
 
 - (void)setA:(NSString *)strNumberA b:(NSString *)strNumberB o:(NSString *)operate;
 
@@ -65,5 +65,13 @@ typedef enum
 @interface OperationFactory : NSObject
 
 + (OperationObj *)createOperate:(NSString *)operate;
+
+@end
+
+@interface OperationContext : NSObject
+
+@property (nonatomic, assign) OperationObj *oper;
+
+- (int)GetResult;
 
 @end
