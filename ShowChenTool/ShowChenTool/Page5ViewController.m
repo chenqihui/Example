@@ -39,7 +39,7 @@
     m_table.dataSource = self;
     m_table.delegate = self;
     [self.view addSubview:m_table];
-    [RDP startServer];
+//    [RDP startServer];
     
     
     NSLog(@"tabelY:%f", m_table.frame.origin.y);
