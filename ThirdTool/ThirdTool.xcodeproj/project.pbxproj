@@ -40,6 +40,7 @@
 		B1B3C94F188E413F00ECB2DF /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B3C94E188E413F00ECB2DF /* MobileCoreServices.framework */; };
 		B1B3C951188E414500ECB2DF /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B3C950188E414500ECB2DF /* CoreMotion.framework */; };
 		B1B3C953188E414E00ECB2DF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B3C952188E414E00ECB2DF /* CFNetwork.framework */; };
+		B1D2999818ED41D6000F3794 /* SFCountdownView.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D2999718ED41D6000F3794 /* SFCountdownView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -121,6 +122,8 @@
 		B1B3C94E188E413F00ECB2DF /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		B1B3C950188E414500ECB2DF /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		B1B3C952188E414E00ECB2DF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B1D2999618ED41D6000F3794 /* SFCountdownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCountdownView.h; sourceTree = "<group>"; };
+		B1D2999718ED41D6000F3794 /* SFCountdownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCountdownView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +174,7 @@
 		B15825E917E83EC00064A539 /* ThirdTool */ = {
 			isa = PBXGroup;
 			children = (
+				B1D2999518ED41D6000F3794 /* SFCountdownView */,
 				B1B3C915188E409800ECB2DF /* RDP */,
 				B15825F517E83F150064A539 /* AFNetworking */,
 				B15825EC17E83EC00064A539 /* ThirdTool.h */,
@@ -282,6 +286,15 @@
 			path = MethodSwizzle;
 			sourceTree = "<group>";
 		};
+		B1D2999518ED41D6000F3794 /* SFCountdownView */ = {
+			isa = PBXGroup;
+			children = (
+				B1D2999618ED41D6000F3794 /* SFCountdownView.h */,
+				B1D2999718ED41D6000F3794 /* SFCountdownView.m */,
+			);
+			path = SFCountdownView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -354,6 +367,7 @@
 				B1B3C93C188E409800ECB2DF /* GCDWebServer.m in Sources */,
 				B1B3C949188E409800ECB2DF /* UIDevice-Hardware.m in Sources */,
 				B1B3C943188E409800ECB2DF /* loadViewTreeController.m in Sources */,
+				B1D2999818ED41D6000F3794 /* SFCountdownView.m in Sources */,
 				B1B3C940188E409800ECB2DF /* highlightViewController.m in Sources */,
 				B158261217E83F150064A539 /* AFURLConnectionOperation.m in Sources */,
 				B158261317E83F150064A539 /* AFXMLRequestOperation.m in Sources */,

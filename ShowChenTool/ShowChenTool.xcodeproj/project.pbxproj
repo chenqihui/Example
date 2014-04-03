@@ -57,6 +57,7 @@
 		B1B3C95B188E41D400ECB2DF /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B3C95A188E41D400ECB2DF /* CoreMotion.framework */; };
 		B1B3C95D188E41DF00ECB2DF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B3C95C188E41DF00ECB2DF /* CFNetwork.framework */; };
 		B1B3C960188E651D00ECB2DF /* Page7ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B3C95F188E651D00ECB2DF /* Page7ViewController.m */; };
+		B1D2999B18ED4228000F3794 /* Page9ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D2999A18ED4228000F3794 /* Page9ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -164,6 +165,8 @@
 		B1B3C95C188E41DF00ECB2DF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		B1B3C95E188E651D00ECB2DF /* Page7ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page7ViewController.h; sourceTree = "<group>"; };
 		B1B3C95F188E651D00ECB2DF /* Page7ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page7ViewController.m; sourceTree = "<group>"; };
+		B1D2999918ED4228000F3794 /* Page9ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page9ViewController.h; sourceTree = "<group>"; };
+		B1D2999A18ED4228000F3794 /* Page9ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page9ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -294,6 +297,8 @@
 				B1A7184918EBC14E00F55F9D /* Page8ViewController.m */,
 				B1A7184B18EC162300F55F9D /* LYDwaveform.h */,
 				B1A7184C18EC162300F55F9D /* LYDwaveform.m */,
+				B1D2999918ED4228000F3794 /* Page9ViewController.h */,
+				B1D2999A18ED4228000F3794 /* Page9ViewController.m */,
 				B11F72B317DDC5A900295F6F /* Supporting Files */,
 			);
 			path = ShowChenTool;
@@ -452,6 +457,7 @@
 				B1A7184A18EBC14E00F55F9D /* Page8ViewController.m in Sources */,
 				741007E31802F6920002789A /* Page3ViewController.m in Sources */,
 				741007E51802F6920002789A /* Page5ViewController.m in Sources */,
+				B1D2999B18ED4228000F3794 /* Page9ViewController.m in Sources */,
 				B1A7184D18EC162300F55F9D /* LYDwaveform.m in Sources */,
 				741008521802FAEA0002789A /* Test4ViewController.m in Sources */,
 				7410084C1802FAEA0002789A /* LotteryEntry.m in Sources */,

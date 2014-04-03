@@ -80,6 +80,7 @@
     NSString *page = [NSString stringWithFormat:@"Page%dViewController", indexPath.row + 1];
     Class cls = NSClassFromString(page);
     UIViewController *mvc = [[[cls alloc] init] autorelease];
+    [mvc.view setBackgroundColor:[UIColor whiteColor]];
     
     if(mvc != nil)
         [self.navigationController pushViewController:mvc animated:YES];
