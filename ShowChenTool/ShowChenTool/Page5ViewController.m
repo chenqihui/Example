@@ -12,6 +12,7 @@
 {
     UITableView *m_table;
     QHQueueDictionary *m_source;
+    NSMutableDictionary *_dicData;
 }
 
 @end
@@ -22,6 +23,7 @@
 {
     [m_table release];
     [m_source release];
+    [_dicData release];
     [super dealloc];
 }
 
@@ -29,6 +31,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    _dicData = [NSMutableDictionary new];
+    [_dicData setValue:@"UIGestureRecognizerTestViewController" forKey:@"Test8ViewController"];
     NSMutableDictionary *source = [[NSMutableDictionary new] autorelease];
     QHOperatePlistFile *operatePlistFile = [[QHOperatePlistFile new] autorelease];
     [operatePlistFile read:@"testSource" typeDate:&source];
@@ -42,7 +46,7 @@
 //    [RDP startServer];
     
     
-    NSLog(@"tabelY:%f", m_table.frame.origin.y);
+//    NSLog(@"tabelY:%f", m_table.frame.origin.y);
     
 }
 
@@ -100,6 +104,10 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     NSString *page = [NSString stringWithFormat:@"Test%dViewController", indexPath.row + 1];
+    if (indexPath.row + 1 > 7)
+    {
+        page = [_dicData valueForKey:page];
+    }
     Class cls = NSClassFromString(page);
     UIViewController *mvc = [[[cls alloc] init] autorelease];
     
@@ -116,7 +124,7 @@ static BOOL m_bScoll;
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     int currentPostion = scrollView.contentOffset.y;
-    printN(currentPostion);
+//    printN(currentPostion);
     if (currentPostion - _lastPosition > 20  && currentPostion > 0)//这个地方加上 currentPostion > 0 即可）
     {
         if(m_table.frame.size.height >= m_table.contentSize.height)

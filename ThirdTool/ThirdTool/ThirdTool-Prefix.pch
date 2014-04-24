@@ -11,4 +11,6 @@
 
 #import  "SFCountdownView/SFCountdownView.h"
 
+#import  "LYDwaveform/LYDwaveform.h"
+
 #endif

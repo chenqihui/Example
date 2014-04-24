@@ -15,6 +15,10 @@
 
 @end
 
+/**
+ *  调用动画效果LYDwaveform，类似报幕，倒计时的动画
+ */
+
 @implementation Page9ViewController
 
 - (void)dealloc

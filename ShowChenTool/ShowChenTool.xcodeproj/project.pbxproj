@@ -46,12 +46,13 @@
 		B11F72C917DDC5A900295F6F /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = B11F72C717DDC5A900295F6F /* ViewController_iPhone.xib */; };
 		B11F72CC17DDC5A900295F6F /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B11F72CA17DDC5A900295F6F /* ViewController_iPad.xib */; };
 		B11F72D817DDC5D300295F6F /* libCHENTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B11F72D717DDC5C900295F6F /* libCHENTool.a */; };
+		B13FD0751908A21C001383E8 /* UIGestureRecognizerTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B13FD0741908A21C001383E8 /* UIGestureRecognizerTestViewController.m */; };
+		B13FD07E1908B19A001383E8 /* snake.png in Resources */ = {isa = PBXBuildFile; fileRef = B13FD07D1908B19A001383E8 /* snake.png */; };
 		B158262A17E8423E0064A539 /* libThirdTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B158262917E842310064A539 /* libThirdTool.a */; };
 		B158262F17E842DC0064A539 /* Page2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B158262E17E842DC0064A539 /* Page2ViewController.m */; };
 		B18360241891083200ED7EFF /* Test7ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B18360231891083200ED7EFF /* Test7ViewController.m */; };
 		B1960A8F17E19598001D4F7F /* Page1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1960A8E17E19598001D4F7F /* Page1ViewController.m */; };
 		B1A7184A18EBC14E00F55F9D /* Page8ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A7184918EBC14E00F55F9D /* Page8ViewController.m */; };
-		B1A7184D18EC162300F55F9D /* LYDwaveform.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A7184C18EC162300F55F9D /* LYDwaveform.m */; };
 		B1B3C957188E41C100ECB2DF /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B3C956188E41C100ECB2DF /* libc++.dylib */; };
 		B1B3C959188E41CB00ECB2DF /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B3C958188E41CB00ECB2DF /* MobileCoreServices.framework */; };
 		B1B3C95B188E41D400ECB2DF /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B3C95A188E41D400ECB2DF /* CoreMotion.framework */; };
@@ -147,6 +148,9 @@
 		B11F72C817DDC5A900295F6F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		B11F72CB17DDC5A900295F6F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
 		B11F72D217DDC5C900295F6F /* CHENTool.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CHENTool.xcodeproj; path = ../CHENTool/CHENTool.xcodeproj; sourceTree = "<group>"; };
+		B13FD0731908A21C001383E8 /* UIGestureRecognizerTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIGestureRecognizerTestViewController.h; sourceTree = "<group>"; };
+		B13FD0741908A21C001383E8 /* UIGestureRecognizerTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIGestureRecognizerTestViewController.m; sourceTree = "<group>"; };
+		B13FD07D1908B19A001383E8 /* snake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snake.png; sourceTree = "<group>"; };
 		B158262417E842300064A539 /* ThirdTool.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ThirdTool.xcodeproj; path = ../ThirdTool/ThirdTool.xcodeproj; sourceTree = "<group>"; };
 		B158262D17E842DC0064A539 /* Page2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page2ViewController.h; sourceTree = "<group>"; };
 		B158262E17E842DC0064A539 /* Page2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page2ViewController.m; sourceTree = "<group>"; };
@@ -156,8 +160,6 @@
 		B1960A8E17E19598001D4F7F /* Page1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page1ViewController.m; sourceTree = "<group>"; };
 		B1A7184818EBC14E00F55F9D /* Page8ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page8ViewController.h; sourceTree = "<group>"; };
 		B1A7184918EBC14E00F55F9D /* Page8ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page8ViewController.m; sourceTree = "<group>"; };
-		B1A7184B18EC162300F55F9D /* LYDwaveform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYDwaveform.h; sourceTree = "<group>"; };
-		B1A7184C18EC162300F55F9D /* LYDwaveform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYDwaveform.m; sourceTree = "<group>"; };
 		B1B3C8D6188E00C000ECB2DF /* TagDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TagDefine.h; sourceTree = "<group>"; };
 		B1B3C956188E41C100ECB2DF /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		B1B3C958188E41CB00ECB2DF /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -214,6 +216,8 @@
 				7410084A1802FAEA0002789A /* Test6ViewController.m */,
 				B18360221891083200ED7EFF /* Test7ViewController.h */,
 				B18360231891083200ED7EFF /* Test7ViewController.m */,
+				B13FD0731908A21C001383E8 /* UIGestureRecognizerTestViewController.h */,
+				B13FD0741908A21C001383E8 /* UIGestureRecognizerTestViewController.m */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -272,8 +276,6 @@
 			children = (
 				B1B3C8D6188E00C000ECB2DF /* TagDefine.h */,
 				74BE77BB181EAED500ACCC71 /* image */,
-				B11F72BB17DDC5A900295F6F /* AppDelegate.h */,
-				B11F72BC17DDC5A900295F6F /* AppDelegate.m */,
 				B11F72C417DDC5A900295F6F /* ViewController.h */,
 				B11F72C517DDC5A900295F6F /* ViewController.m */,
 				B11F72C717DDC5A900295F6F /* ViewController_iPhone.xib */,
@@ -295,8 +297,6 @@
 				B1B3C95F188E651D00ECB2DF /* Page7ViewController.m */,
 				B1A7184818EBC14E00F55F9D /* Page8ViewController.h */,
 				B1A7184918EBC14E00F55F9D /* Page8ViewController.m */,
-				B1A7184B18EC162300F55F9D /* LYDwaveform.h */,
-				B1A7184C18EC162300F55F9D /* LYDwaveform.m */,
 				B1D2999918ED4228000F3794 /* Page9ViewController.h */,
 				B1D2999A18ED4228000F3794 /* Page9ViewController.m */,
 				B11F72B317DDC5A900295F6F /* Supporting Files */,
@@ -307,6 +307,9 @@
 		B11F72B317DDC5A900295F6F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B11F72BB17DDC5A900295F6F /* AppDelegate.h */,
+				B11F72BC17DDC5A900295F6F /* AppDelegate.m */,
+				B13FD07D1908B19A001383E8 /* snake.png */,
 				741008351802FAD90002789A /* showToolListData.plist */,
 				B11F72B417DDC5A900295F6F /* ShowChenTool-Info.plist */,
 				B11F72B517DDC5A900295F6F /* InfoPlist.strings */,
@@ -418,6 +421,7 @@
 			files = (
 				B11F72B717DDC5A900295F6F /* InfoPlist.strings in Resources */,
 				74BE77C2181EAEE300ACCC71 /* img_messagerecord_three@2x.png in Resources */,
+				B13FD07E1908B19A001383E8 /* snake.png in Resources */,
 				74BE77C3181EAEE300ACCC71 /* img_messagerecord_two@2x.png in Resources */,
 				74BD0374181FFFEB00C93BE9 /* img_record_progress@2x.png in Resources */,
 				B11F72BF17DDC5A900295F6F /* Default.png in Resources */,
@@ -458,13 +462,13 @@
 				741007E31802F6920002789A /* Page3ViewController.m in Sources */,
 				741007E51802F6920002789A /* Page5ViewController.m in Sources */,
 				B1D2999B18ED4228000F3794 /* Page9ViewController.m in Sources */,
-				B1A7184D18EC162300F55F9D /* LYDwaveform.m in Sources */,
 				741008521802FAEA0002789A /* Test4ViewController.m in Sources */,
 				7410084C1802FAEA0002789A /* LotteryEntry.m in Sources */,
 				7410084D1802FAEA0002789A /* Test1ViewController.m in Sources */,
 				B18360241891083200ED7EFF /* Test7ViewController.m in Sources */,
 				B11F72C617DDC5A900295F6F /* ViewController.m in Sources */,
 				B1960A8F17E19598001D4F7F /* Page1ViewController.m in Sources */,
+				B13FD0751908A21C001383E8 /* UIGestureRecognizerTestViewController.m in Sources */,
 				B158262F17E842DC0064A539 /* Page2ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

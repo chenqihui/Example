@@ -8,8 +8,6 @@
 
 #import "Page8ViewController.h"
 
-#import "LYDwaveform.h"
-
 #define ANGLE(a) ((2*M_PI)/360)*a
 
 @implementation CView
@@ -201,14 +199,14 @@ float degreeToRadian(float degree)
     
 //    [view startRotateAnimation];
     
-//    _textField = [[UITextField alloc] initWithFrame:CGRectMake(20, 80, 100, 30)];
-//    [_textField setText:@"textField"];
-//    [self.view addSubview:_textField];
-//    
-//    UIButton *btn = [UIButton buttonWithType:UIButtonTypeContactAdd];
-//    [btn setFrame:CGRectMake(10, 200, 30, 30)];
-//    [self.view addSubview:btn];
-//    [btn addTarget:self action:@selector(start) forControlEvents:UIControlEventTouchDown];
+    _textField = [[UITextField alloc] initWithFrame:CGRectMake(20, 80, 100, 30)];
+    [_textField setText:@"textField"];
+    [self.view addSubview:_textField];
+
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeContactAdd];
+    [btn setFrame:CGRectMake(10, _textField.frame.origin.y + _textField.frame.size.height + 5, 30, 30)];
+    [self.view addSubview:btn];
+    [btn addTarget:self action:@selector(start) forControlEvents:UIControlEventTouchDown];
     
     view = [[LYDwaveform alloc] initWithFrame:CGRectMake(50, 200, 220, 80)];
     view.backgroundColor = [UIColor redColor];

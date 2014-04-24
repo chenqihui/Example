@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B13FD0721908A070001383E8 /* LYDwaveform.m in Sources */ = {isa = PBXBuildFile; fileRef = B13FD0711908A070001383E8 /* LYDwaveform.m */; };
 		B15825E817E83EC00064A539 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B15825E717E83EC00064A539 /* Foundation.framework */; };
 		B15825ED17E83EC00064A539 /* ThirdTool.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B15825EC17E83EC00064A539 /* ThirdTool.h */; };
 		B15825EF17E83EC00064A539 /* ThirdTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B15825EE17E83EC00064A539 /* ThirdTool.m */; };
@@ -57,6 +58,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B13FD0701908A070001383E8 /* LYDwaveform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYDwaveform.h; sourceTree = "<group>"; };
+		B13FD0711908A070001383E8 /* LYDwaveform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYDwaveform.m; sourceTree = "<group>"; };
 		B15825E417E83EC00064A539 /* libThirdTool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libThirdTool.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B15825E717E83EC00064A539 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B15825EB17E83EC00064A539 /* ThirdTool-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ThirdTool-Prefix.pch"; sourceTree = "<group>"; };
@@ -142,6 +145,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B13FD06F1908A070001383E8 /* LYDwaveform */ = {
+			isa = PBXGroup;
+			children = (
+				B13FD0701908A070001383E8 /* LYDwaveform.h */,
+				B13FD0711908A070001383E8 /* LYDwaveform.m */,
+			);
+			path = LYDwaveform;
+			sourceTree = "<group>";
+		};
 		B15825DB17E83EC00064A539 = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +186,7 @@
 		B15825E917E83EC00064A539 /* ThirdTool */ = {
 			isa = PBXGroup;
 			children = (
+				B13FD06F1908A070001383E8 /* LYDwaveform */,
 				B1D2999518ED41D6000F3794 /* SFCountdownView */,
 				B1B3C915188E409800ECB2DF /* RDP */,
 				B15825F517E83F150064A539 /* AFNetworking */,
@@ -367,6 +380,7 @@
 				B1B3C93C188E409800ECB2DF /* GCDWebServer.m in Sources */,
 				B1B3C949188E409800ECB2DF /* UIDevice-Hardware.m in Sources */,
 				B1B3C943188E409800ECB2DF /* loadViewTreeController.m in Sources */,
+				B13FD0721908A070001383E8 /* LYDwaveform.m in Sources */,
 				B1D2999818ED41D6000F3794 /* SFCountdownView.m in Sources */,
 				B1B3C940188E409800ECB2DF /* highlightViewController.m in Sources */,
 				B158261217E83F150064A539 /* AFURLConnectionOperation.m in Sources */,
