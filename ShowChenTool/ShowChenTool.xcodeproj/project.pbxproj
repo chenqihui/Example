@@ -59,6 +59,7 @@
 		B1B3C95D188E41DF00ECB2DF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B3C95C188E41DF00ECB2DF /* CFNetwork.framework */; };
 		B1B3C960188E651D00ECB2DF /* Page7ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B3C95F188E651D00ECB2DF /* Page7ViewController.m */; };
 		B1D2999B18ED4228000F3794 /* Page9ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D2999A18ED4228000F3794 /* Page9ViewController.m */; };
+		B1E48BBA1909F4990051584C /* dragon.png in Resources */ = {isa = PBXBuildFile; fileRef = B1E48BB91909F4990051584C /* dragon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -169,6 +170,7 @@
 		B1B3C95F188E651D00ECB2DF /* Page7ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page7ViewController.m; sourceTree = "<group>"; };
 		B1D2999918ED4228000F3794 /* Page9ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page9ViewController.h; sourceTree = "<group>"; };
 		B1D2999A18ED4228000F3794 /* Page9ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page9ViewController.m; sourceTree = "<group>"; };
+		B1E48BB91909F4990051584C /* dragon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dragon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -310,6 +312,7 @@
 				B11F72BB17DDC5A900295F6F /* AppDelegate.h */,
 				B11F72BC17DDC5A900295F6F /* AppDelegate.m */,
 				B13FD07D1908B19A001383E8 /* snake.png */,
+				B1E48BB91909F4990051584C /* dragon.png */,
 				741008351802FAD90002789A /* showToolListData.plist */,
 				B11F72B417DDC5A900295F6F /* ShowChenTool-Info.plist */,
 				B11F72B517DDC5A900295F6F /* InfoPlist.strings */,
@@ -424,6 +427,7 @@
 				B13FD07E1908B19A001383E8 /* snake.png in Resources */,
 				74BE77C3181EAEE300ACCC71 /* img_messagerecord_two@2x.png in Resources */,
 				74BD0374181FFFEB00C93BE9 /* img_record_progress@2x.png in Resources */,
+				B1E48BBA1909F4990051584C /* dragon.png in Resources */,
 				B11F72BF17DDC5A900295F6F /* Default.png in Resources */,
 				B11F72C117DDC5A900295F6F /* Default@2x.png in Resources */,
 				74DEB56917FBEF7E00FD024A /* testSource.plist in Resources */,
